@@ -23,11 +23,12 @@ collected_text = []
 
 tokenizer = RegexpTokenizer(r'\w+')
 stemmer = Porter2Stemmer()
-# doc_id = 0 -> remove this line
+
 postings_index = {}
 index_file = "index.txt"
 
 def update_total_terms_per_file(filename, terms_list):
+    ''' In this implementation we are maintaining a json structure of filename and total terms per file. So if the file total_terms_per_file.txt is empty, we write an empty object to the file first'''
     path = "total_terms_per_file.txt"
     try:
         # Initialize the dictionary to hold filename and term frequency
@@ -35,9 +36,14 @@ def update_total_terms_per_file(filename, terms_list):
 
         # Check if the file exists
         if os.path.exists(path):
-            # Read the existing data
-            with open(path, 'r') as file:
-                data = json.load(file)
+            # Read the existing data if the file is not empty
+            if os.path.getsize(path) > 0:
+                with open(path, 'r') as file:
+                    data = json.load(file)
+            else:
+                # If the file is empty, write an empty dictionary {}
+                with open(path, 'w') as file:
+                    json.dump(data, file)
 
         # Update the dictionary with the new or updated term frequency
         data[filename] = len(terms_list)
@@ -45,8 +51,11 @@ def update_total_terms_per_file(filename, terms_list):
         # Write the updated dictionary back to the file
         with open(path, 'w') as file:
             json.dump(data, file)
-    except:
-        print("Error updating term frequency")
+        print("Term frequency updated successfully.")
+    except Exception as e:
+        print("Error updating term frequency:", e)
+
+
 
 def create_index_file(postings_index, filename):
     try:
@@ -109,4 +118,4 @@ for filename in os.listdir(source_folder):
         print(f"Error reading file {filename}: {e}")
 
 create_index_file(postings_index, index_file)
-print(postings_index)
+# print(postings_index)

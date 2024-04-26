@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse
 
+''' This method helps scrape websites and store content in the text files for our prototype'''
 def fetch_and_save_website_content(url):
     try:
         # Fetch the content from the URL
