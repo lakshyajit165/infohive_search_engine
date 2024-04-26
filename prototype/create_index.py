@@ -1,4 +1,5 @@
 import os
+import json
 from porter2stemmer import Porter2Stemmer
 
 from nltk.tokenize import RegexpTokenizer
@@ -25,6 +26,27 @@ stemmer = Porter2Stemmer()
 # doc_id = 0 -> remove this line
 postings_index = {}
 index_file = "index.txt"
+
+def update_total_terms_per_file(filename, terms_list):
+    path = "total_terms_per_file.txt"
+    try:
+        # Initialize the dictionary to hold filename and term frequency
+        data = {}
+
+        # Check if the file exists
+        if os.path.exists(path):
+            # Read the existing data
+            with open(path, 'r') as file:
+                data = json.load(file)
+
+        # Update the dictionary with the new or updated term frequency
+        data[filename] = len(terms_list)
+
+        # Write the updated dictionary back to the file
+        with open(path, 'w') as file:
+            json.dump(data, file)
+    except:
+        print("Error updating term frequency")
 
 def create_index_file(postings_index, filename):
     try:
@@ -65,7 +87,6 @@ for filename in os.listdir(source_folder):
     filepath = os.path.join(source_folder, filename)
     try:
         with open(filepath, 'r', encoding='utf-8') as file:
-            # doc_id += 1 -> remove this line
             # Read text from the file and append to the list
             text = file.read()
             # lower case the strings
@@ -77,6 +98,7 @@ for filename in os.listdir(source_folder):
             # stem the filtered token list
             stemmed_list = [stemmer.stem(word) for word in filtered_tokens_list]
             print(filename, stemmed_list)
+            update_total_terms_per_file(filename, stemmed_list)
             postings_index_map = create_postings_map_per_file(filename, stemmed_list)
             create_postings_index(postings_index_map)
             

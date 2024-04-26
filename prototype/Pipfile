@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 nltk = "*"
 porter2stemmer = "*"
+bs4 = "*"
 
 [dev-packages]
 
