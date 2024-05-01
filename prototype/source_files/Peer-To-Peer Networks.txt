@@ -1,0 +1,20 @@
+Equality for all.
+Sharing is caring.
+Unity makes strength.
+The more the merrier.
+Teamwork makes the dream work.
+Welcome to peer-to-peer networks!
+
+
+Client—Server Model : 
+The paradigm by which modern systems are designed, which consists of clients requesting data or service from servers and servers providing data or service to clients.
+
+Throughput : 
+The number of operations that a system can handle properly per time unit. For instance the throughput of a server can often be measured in requests per second (RPS or QPS).
+
+Peer-To-Peer Network : 
+A collection of machines referred to as peers that divide a workload between themselves to presumably complete the workload faster than would otherwise be possible. Peer-to-peer networks are often used in file-distribution systems.
+
+Gossip Protocol : 
+When a set of machines talk to each other in a uncoordinated manner in a cluster to spread information through a system without requiring a central source of data.
+

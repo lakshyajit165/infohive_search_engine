@@ -1,16 +1,1103 @@
-ben|doc1.txt:0
-studi|doc1.txt:1
-comput|doc1.txt:2,3
-lab|doc1.txt:4,5
-brown|doc1.txt:6;doc2.txt:2
-univers|doc1.txt:7;doc2.txt:3
-stat|doc1.txt:8
-art|doc1.txt:9
-equip|doc1.txt:10
-data|doc3.txt:0
-scientist|doc3.txt:1
-work|doc3.txt:2
-larg|doc3.txt:3
-dataset|doc3.txt:4
-steve|doc2.txt:0
-teach|doc2.txt:1
+think|Polling And Streaming.txt:0;Leader Election.txt:25;Storage.txt:24
+poll|Polling And Streaming.txt:1,24,62;Publish_Subscribe Pattern.txt:22,190
+stream|Polling And Streaming.txt:2,22,50,74;Network Protocols.txt:176;Publish_Subscribe Pattern.txt:34,187
+kind|Polling And Streaming.txt:3,46;MapReduce.txt:312;Specialized Storage Paradigms.txt:169,269
+like|Polling And Streaming.txt:4,49;MapReduce.txt:48,227;Network Protocols.txt:143;Configuration.txt:2,13,103;Publish_Subscribe Pattern.txt:107;API Design.txt:260;Hashing.txt:1,11;Relational Databases.txt:220,347;Caching.txt:20,212;Load Balancers.txt:83;Rate Limiting.txt:156;Key-Value Stores.txt:61;Leader Election.txt:168;Logging And Monitoring.txt:110;Latency And Throughput.txt:5,108;Specialized Storage Paradigms.txt:37,124,190,214,231,307,396,404,410,559,569;Replication And Sharding.txt:60
+classroom|Polling And Streaming.txt:5
+sometim|Polling And Streaming.txt:6;Availability.txt:71,111;Network Protocols.txt:255;Publish_Subscribe Pattern.txt:84;Caching.txt:215;Security And HTTPS.txt:87;Leader Election.txt:64;Client—Server Model.txt:190;Specialized Storage Paradigms.txt:206;Replication And Sharding.txt:250,273
+student|Polling And Streaming.txt:7
+ask|Polling And Streaming.txt:8
+teacher|Polling And Streaming.txt:9
+lot|Polling And Streaming.txt:10;Relational Databases.txt:12;Load Balancers.txt:115;Replication And Sharding.txt:345
+question|Polling And Streaming.txt:11
+time|Polling And Streaming.txt:12,57;Availability.txt:23,46,64,84,93,127;Proxies.txt:40,70;MapReduce.txt:60,65,88;Network Protocols.txt:40,70;Publish_Subscribe Pattern.txt:123,128,151;Relational Databases.txt:170,414;Peer-To-Peer Networks.txt:40;Caching.txt:10,18,77;Load Balancers.txt:86;Rate Limiting.txt:16,25,123;Security And HTTPS.txt:44,74,515;Leader Election.txt:37,46,112,148;Client—Server Model.txt:36,66;Storage.txt:169;Latency And Throughput.txt:76,98,106,165;Specialized Storage Paradigms.txt:264,274,283,583,618,625;Replication And Sharding.txt:34,43,50,58,117,259
+quiet|Polling And Streaming.txt:13
+listen|Polling And Streaming.txt:14;Availability.txt:35;Proxies.txt:59;Network Protocols.txt:59;Security And HTTPS.txt:63;Client—Server Model.txt:55,147,156
+attent|Polling And Streaming.txt:15
+teach|Polling And Streaming.txt:16
+lectur|Polling And Streaming.txt:17
+fire|Polling And Streaming.txt:18
+video|Polling And Streaming.txt:19;MapReduce.txt:17;API Design.txt:21,198,206,224,230;Hashing.txt:18;Storage.txt:1,7;Latency And Throughput.txt:3;Specialized Storage Paradigms.txt:2,6;Replication And Sharding.txt:12
+get|Polling And Streaming.txt:20,80;Availability.txt:21;Network Protocols.txt:214;Publish_Subscribe Pattern.txt:40;API Design.txt:64;Hashing.txt:79,91;Relational Databases.txt:20,112;Caching.txt:141,184;Security And HTTPS.txt:156;Storage.txt:111;Logging And Monitoring.txt:66,92;Replication And Sharding.txt:221,307,313
+readi|Polling And Streaming.txt:21;Relational Databases.txt:21
+abl|Polling And Streaming.txt:23;Specialized Storage Paradigms.txt:242
+class|Polling And Streaming.txt:25;MapReduce.txt:249
+session|Polling And Streaming.txt:26;Security And HTTPS.txt:533
+client|Polling And Streaming.txt:27,35,44;Availability.txt:33,44,55;Proxies.txt:26,38,49,57,68,79,85,89,93,107;Network Protocols.txt:26,38,49,57,68,79,190;API Design.txt:40,184;Peer-To-Peer Networks.txt:15,23,32;Load Balancers.txt:24;Security And HTTPS.txt:30,42,53,61,72,83,132,215,390,462,479,481,501,521,524;Client—Server Model.txt:0,7,8,14,22,34,45,53,64,75,77,85,94;Replication And Sharding.txt:231,265,296
+server|Polling And Streaming.txt:28,39,40,83;Availability.txt:27,45,52,73,80,88;Proxies.txt:10,32,39,46,51,69,76,83,86,105,108,111;Network Protocols.txt:32,39,46,51,69,76,194;Publish_Subscribe Pattern.txt:43;API Design.txt:44;Hashing.txt:56,87,94,96,99,115;Relational Databases.txt:43;Peer-To-Peer Networks.txt:16,27,28,44;Caching.txt:81,175,214,222,227,233,239,241;Load Balancers.txt:6,22,25,28,43,55,61,66,79,99,113;Rate Limiting.txt:12,20;Security And HTTPS.txt:36,43,50,55,73,80,136,216,371,391,415,419,436,463,486,487,489,517,520,522,526;Leader Election.txt:8,33,41,124,126;Client—Server Model.txt:3,4,9,15,28,35,42,47,65,72,78,89,90;Storage.txt:42;Latency And Throughput.txt:169;Replication And Sharding.txt:30,38,121,152,229,232,235,248,329,343
+model|Polling And Streaming.txt:29;MapReduce.txt:2;Publish_Subscribe Pattern.txt:75;API Design.txt:144;Relational Databases.txt:392,396;Peer-To-Peer Networks.txt:17;Key-Value Stores.txt:11;Leader Election.txt:90,94;Client—Server Model.txt:10,79;Specialized Storage Paradigms.txt:298
+paradigm|Polling And Streaming.txt:30;Publish_Subscribe Pattern.txt:188;Peer-To-Peer Networks.txt:18;Key-Value Stores.txt:4;Security And HTTPS.txt:311;Client—Server Model.txt:80
+modern|Polling And Streaming.txt:31;Peer-To-Peer Networks.txt:19;Client—Server Model.txt:81
+system|Polling And Streaming.txt:32;Availability.txt:11,26,103,161,181,205;MapReduce.txt:29,41,51,76,82,190,216,219,231,238,243,256,322;Network Protocols.txt:16;Configuration.txt:9,88,100,111;Publish_Subscribe Pattern.txt:18,102,139,145,182;API Design.txt:8,28,146,252;Hashing.txt:62,135;Relational Databases.txt:103,401;Peer-To-Peer Networks.txt:20,36,75,86;Caching.txt:15,73,162;Load Balancers.txt:13,49;Rate Limiting.txt:59,117,151;Key-Value Stores.txt:105;Security And HTTPS.txt:5,8;Leader Election.txt:10,56,71,99,207;Client—Server Model.txt:82,170,208;Storage.txt:21,102;Logging And Monitoring.txt:7,19,56,74,83,90,95;Latency And Throughput.txt:103,161;Specialized Storage Paradigms.txt:174,238,333;Replication And Sharding.txt:0,21,55,113,133,212,254
+design|Polling And Streaming.txt:33;Publish_Subscribe Pattern.txt:19;API Design.txt:9,15,172,192,227,263;Peer-To-Peer Networks.txt:21;Caching.txt:165;Security And HTTPS.txt:9;Client—Server Model.txt:83;Storage.txt:22;Specialized Storage Paradigms.txt:239
+consist|Polling And Streaming.txt:34;MapReduce.txt:45;Network Protocols.txt:91,274;Publish_Subscribe Pattern.txt:76;Hashing.txt:68;Relational Databases.txt:283,306,378,380,383,388,390,391,395,404;Peer-To-Peer Networks.txt:22;Rate Limiting.txt:124;Key-Value Stores.txt:94,133;Security And HTTPS.txt:106;Leader Election.txt:76,78,81,86,88,89,93,102,196,211;Client—Server Model.txt:84,105;Specialized Storage Paradigms.txt:636
+request|Polling And Streaming.txt:36;Proxies.txt:29;Network Protocols.txt:5,29,193,197;API Design.txt:43,47,163,185;Hashing.txt:90;Peer-To-Peer Networks.txt:24,47;Caching.txt:84,121,146,152,173;Load Balancers.txt:3;Rate Limiting.txt:57,67,90;Security And HTTPS.txt:33,135,139;Client—Server Model.txt:25,86,232;Latency And Throughput.txt:172;Replication And Sharding.txt:124
+data|Polling And Streaming.txt:37,42,67,72;Availability.txt:31;Proxies.txt:30,55;MapReduce.txt:6,35,173,313;Network Protocols.txt:30,55,161,177,267,287;Publish_Subscribe Pattern.txt:27,32;Hashing.txt:28;Relational Databases.txt:39,41,83,130,152,164,173,183,189,196,332,346,348;Peer-To-Peer Networks.txt:25,30,91;Caching.txt:95,101,108,112,128,135,147,153;Key-Value Stores.txt:10,14,29,37;Security And HTTPS.txt:34,59,99,119,238,288,296,388,538;Leader Election.txt:166;Client—Server Model.txt:26,51,87,92;Storage.txt:4,38,40,82,129,151,163,172,182,188;Latency And Throughput.txt:36,58,70,79,89,95;Specialized Storage Paradigms.txt:13,109,123,125,185,276,277,294,297,299,323,334,374,395,417,425,445,466,478;Replication And Sharding.txt:14,16,148,150,192,245,263,271,275,301,306,312,322
+servic|Polling And Streaming.txt:38,43;Availability.txt:32,81,167,175,192,199;Proxies.txt:31,56;Network Protocols.txt:31,56;Publish_Subscribe Pattern.txt:199;Peer-To-Peer Networks.txt:26,31;Caching.txt:210;Rate Limiting.txt:13,107,142;Security And HTTPS.txt:35,60;Leader Election.txt:34,134;Client—Server Model.txt:27,52,88,93;Specialized Storage Paradigms.txt:248,600,607,612;Replication And Sharding.txt:31
+provid|Polling And Streaming.txt:41;Availability.txt:30,176,200;Proxies.txt:54;Network Protocols.txt:54;Relational Databases.txt:428;Peer-To-Peer Networks.txt:29;Security And HTTPS.txt:58;Client—Server Model.txt:50,91;Specialized Storage Paradigms.txt:162,601,608
+socket|Polling And Streaming.txt:45,54,58;Network Protocols.txt:173
+file|Polling And Streaming.txt:47;MapReduce.txt:28,40,47,50,185,215,218,230,237,242,260,321;Configuration.txt:1,25,32,50;API Design.txt:104,122;Peer-To-Peer Networks.txt:73;Logging And Monitoring.txt:31
+act|Polling And Streaming.txt:48,63,78;Availability.txt:51;Proxies.txt:45,75,87,109;MapReduce.txt:226;Network Protocols.txt:45,75;Publish_Subscribe Pattern.txt:23,38;Caching.txt:211;Load Balancers.txt:10,26;Rate Limiting.txt:54;Security And HTTPS.txt:49,79;Client—Server Model.txt:41,71;Logging And Monitoring.txt:49;Replication And Sharding.txt:233,243,278
+process|Polling And Streaming.txt:51,89;Availability.txt:12,19,29,70,158;Proxies.txt:28,53;MapReduce.txt:3,118,314;Network Protocols.txt:28,53;Publish_Subscribe Pattern.txt:49,59;Relational Databases.txt:69,110,187;Caching.txt:99;Security And HTTPS.txt:32,57,426,461;Leader Election.txt:68,120;Client—Server Model.txt:24,49,180;Storage.txt:68,109,186,199;Logging And Monitoring.txt:72,89;Latency And Throughput.txt:93;Replication And Sharding.txt:130,178,219
+read|Polling And Streaming.txt:52;MapReduce.txt:282;Publish_Subscribe Pattern.txt:91,96;API Design.txt:242;Relational Databases.txt:361,397;Caching.txt:26,35,53;Leader Election.txt:95;Latency And Throughput.txt:114,123,141;Specialized Storage Paradigms.txt:138;Replication And Sharding.txt:66,75,93
+write|Polling And Streaming.txt:53;Relational Databases.txt:82,368,371,412;Leader Election.txt:110;Storage.txt:81;Specialized Storage Paradigms.txt:145,148;Replication And Sharding.txt:191
+commun|Polling And Streaming.txt:55;MapReduce.txt:286;Network Protocols.txt:17,22,139;Security And HTTPS.txt:202,206,244,368,389,403,464,472,539;Logging And Monitoring.txt:108
+manner|Polling And Streaming.txt:56;MapReduce.txt:127;Peer-To-Peer Networks.txt:82
+front|Polling And Streaming.txt:59
+tcp|Polling And Streaming.txt:60;Network Protocols.txt:2,144,150,168,189;API Design.txt:39;Relational Databases.txt:53;Security And HTTPS.txt:131,386;Storage.txt:52;Replication And Sharding.txt:162
+connect|Polling And Streaming.txt:61,86;Network Protocols.txt:86,167,179;Publish_Subscribe Pattern.txt:46;Security And HTTPS.txt:295,428,458,541;Client—Server Model.txt:100,150;Specialized Storage Paradigms.txt:322
+fetch|Polling And Streaming.txt:64;Publish_Subscribe Pattern.txt:24
+resourc|Polling And Streaming.txt:65;Publish_Subscribe Pattern.txt:25
+piec|Polling And Streaming.txt:66;Availability.txt:42;Proxies.txt:36,66;Network Protocols.txt:36,66;Publish_Subscribe Pattern.txt:26;API Design.txt:23;Caching.txt:104;Security And HTTPS.txt:40,70;Client—Server Model.txt:32,62;Replication And Sharding.txt:282
+regular|Polling And Streaming.txt:68;Publish_Subscribe Pattern.txt:28
+interv|Polling And Streaming.txt:69;Publish_Subscribe Pattern.txt:29
+make|Polling And Streaming.txt:70;Availability.txt:163,179,203;Network Protocols.txt:191;Publish_Subscribe Pattern.txt:30;API Design.txt:41;Peer-To-Peer Networks.txt:4,8;Rate Limiting.txt:159;Security And HTTPS.txt:133;Leader Election.txt:73;Client—Server Model.txt:220;Specialized Storage Paradigms.txt:360;Replication And Sharding.txt:135
+sure|Polling And Streaming.txt:71;Publish_Subscribe Pattern.txt:31
+stale|Polling And Streaming.txt:73;Publish_Subscribe Pattern.txt:33;Relational Databases.txt:402;Caching.txt:131;Leader Election.txt:100
+network|Polling And Streaming.txt:75;Availability.txt:37;Proxies.txt:61;Network Protocols.txt:11,61,118,124,133,151,185,258,285,289;Publish_Subscribe Pattern.txt:35;API Design.txt:35,162,213;Relational Databases.txt:49,91,326;Peer-To-Peer Networks.txt:14,54,70;Caching.txt:47,120,206;Load Balancers.txt:2;Rate Limiting.txt:89;Security And HTTPS.txt:0,65,90,117,121,127;Client—Server Model.txt:57,132,138,149;Storage.txt:48,90;Latency And Throughput.txt:135;Specialized Storage Paradigms.txt:344;Replication And Sharding.txt:87,158,200
+usual|Polling And Streaming.txt:76;Availability.txt:34,85;Proxies.txt:58;MapReduce.txt:221;Network Protocols.txt:58,125,169;Publish_Subscribe Pattern.txt:36,52;Relational Databases.txt:119,381;Rate Limiting.txt:17;Security And HTTPS.txt:62,374;Leader Election.txt:38,79;Client—Server Model.txt:54,139,187;Storage.txt:118,192;Latency And Throughput.txt:25;Specialized Storage Paradigms.txt:194,209,236;Replication And Sharding.txt:35
+refer|Polling And Streaming.txt:77;Availability.txt:62,75,116;Proxies.txt:101;Network Protocols.txt:112,257;Publish_Subscribe Pattern.txt:37,53;API Design.txt:142;Relational Databases.txt:7,120,141,226,344,382;Peer-To-Peer Networks.txt:57;Caching.txt:159,243;Key-Value Stores.txt:67;Security And HTTPS.txt:89;Leader Election.txt:80;Client—Server Model.txt:126;Storage.txt:119,140,193;Latency And Throughput.txt:26,47;Specialized Storage Paradigms.txt:43,121
+continu|Polling And Streaming.txt:79;Publish_Subscribe Pattern.txt:39
+fee|Polling And Streaming.txt:81;Publish_Subscribe Pattern.txt:41
+inform|Polling And Streaming.txt:82;Network Protocols.txt:283;Publish_Subscribe Pattern.txt:42;Peer-To-Peer Networks.txt:85;Security And HTTPS.txt:115,358,469;Storage.txt:14;Logging And Monitoring.txt:54
+keep|Polling And Streaming.txt:84;Publish_Subscribe Pattern.txt:44;Relational Databases.txt:57,94;Storage.txt:56,93;Replication And Sharding.txt:166,203
+open|Polling And Streaming.txt:85;MapReduce.txt:305;Network Protocols.txt:178;Publish_Subscribe Pattern.txt:45;Security And HTTPS.txt:314;Specialized Storage Paradigms.txt:616,623
+two|Polling And Streaming.txt:87;Availability.txt:96,135;MapReduce.txt:232;Publish_Subscribe Pattern.txt:47;Caching.txt:247;Rate Limiting.txt:28;Security And HTTPS.txt:205,280;Leader Election.txt:49,173,181;Latency And Throughput.txt:18;Specialized Storage Paradigms.txt:422;Replication And Sharding.txt:46,281
+machin|Polling And Streaming.txt:88;Availability.txt:16,28,41,49,67;Proxies.txt:27,35,43,52,65,73;MapReduce.txt:158,224,273,287;Network Protocols.txt:15,27,35,43,52,65,73,85,110,120,121,137,138,163;Publish_Subscribe Pattern.txt:48;Relational Databases.txt:68,98,115,137;Peer-To-Peer Networks.txt:56,79;Rate Limiting.txt:158;Key-Value Stores.txt:20;Security And HTTPS.txt:31,39,47,56,69,77;Leader Election.txt:172;Client—Server Model.txt:23,31,39,48,61,69,99,124,134,135,151,219;Storage.txt:67,97,114,136;Latency And Throughput.txt:43;Replication And Sharding.txt:177,207,224
+oop|Availability.txt:0
+content|Availability.txt:1;Network Protocols.txt:224,246;API Design.txt:74,96;Caching.txt:204;Security And HTTPS.txt:166,188
+unavail|Availability.txt:2;Rate Limiting.txt:120
+right|Availability.txt:3;MapReduce.txt:283;Hashing.txt:6;Key-Value Stores.txt:24
+pleas|Availability.txt:4
+tri|Availability.txt:5;Rate Limiting.txt:114
+later|Availability.txt:6;Storage.txt:10
+kid|Availability.txt:7;Client—Server Model.txt:19
+systemsexpert|Availability.txt:8;API Design.txt:3
+high|Availability.txt:9,99,105;Publish_Subscribe Pattern.txt:194;Key-Value Stores.txt:95,134;Leader Election.txt:52,58,197,212;Latency And Throughput.txt:8,22
+avail|Availability.txt:10,77,90,98,100,107,122,182,206;MapReduce.txt:250;Rate Limiting.txt:9,22,30;Key-Value Stores.txt:96,135;Leader Election.txt:30,43,51,53,60,198,213;Replication And Sharding.txt:27,40,48
+program|Availability.txt:13;MapReduce.txt:1;Relational Databases.txt:30;Client—Server Model.txt:146;Storage.txt:29;Logging And Monitoring.txt:58;Replication And Sharding.txt:139
+current|Availability.txt:14
+run|Availability.txt:15,69,82;MapReduce.txt:136,163;Relational Databases.txt:363;Rate Limiting.txt:14;Security And HTTPS.txt:399;Leader Election.txt:35;Specialized Storage Paradigms.txt:140,580;Replication And Sharding.txt:32
+alway|Availability.txt:17;MapReduce.txt:110;Publish_Subscribe Pattern.txt:173;Caching.txt:235
+assum|Availability.txt:18;Specialized Storage Paradigms.txt:241,496
+may|Availability.txt:20;Network Protocols.txt:7;Hashing.txt:36;Relational Databases.txt:65;Storage.txt:64;Replication And Sharding.txt:174
+termin|Availability.txt:22
+suffici|Availability.txt:24
+larg|Availability.txt:25;MapReduce.txt:119,183,222,229,271,299;API Design.txt:167;Relational Databases.txt:101;Storage.txt:100;Specialized Storage Paradigms.txt:172,205,208,215;Replication And Sharding.txt:210
+incom|Availability.txt:36;Proxies.txt:60;Network Protocols.txt:60;Rate Limiting.txt:66;Security And HTTPS.txt:64;Client—Server Model.txt:56
+call|Availability.txt:38;Proxies.txt:62;Network Protocols.txt:62;Publish_Subscribe Pattern.txt:85;Relational Databases.txt:50,265,426;Security And HTTPS.txt:66;Leader Election.txt:128;Client—Server Model.txt:58,173;Storage.txt:49;Latency And Throughput.txt:15;Specialized Storage Paradigms.txt:82,160;Replication And Sharding.txt:159,274,283
+note|Availability.txt:39;Proxies.txt:33,63,97;Network Protocols.txt:33,63;Caching.txt:127;Security And HTTPS.txt:37,67,343;Client—Server Model.txt:29,59;Replication And Sharding.txt:11
+singl|Availability.txt:40,48;Proxies.txt:34,42,64,72;Network Protocols.txt:34,42,64,72;API Design.txt:174;Security And HTTPS.txt:38,46,68,76,234;Leader Election.txt:165;Client—Server Model.txt:30,38,60,68
+softwar|Availability.txt:43;Proxies.txt:37,67;Network Protocols.txt:37,67;Caching.txt:106;Security And HTTPS.txt:41,71;Client—Server Model.txt:33,63
+instanc|Availability.txt:47,58;Proxies.txt:41,71;MapReduce.txt:267;Network Protocols.txt:41,71,119;Configuration.txt:106;API Design.txt:149,195;Peer-To-Peer Networks.txt:42;Caching.txt:79;Rate Limiting.txt:87;Security And HTTPS.txt:45,75;Leader Election.txt:123;Client—Server Model.txt:37,67,133;Latency And Throughput.txt:167;Replication And Sharding.txt:119,258
+could|Availability.txt:50;Proxies.txt:44,74;Network Protocols.txt:44,74;API Design.txt:6,12,202,226;Relational Databases.txt:416;Caching.txt:154;Rate Limiting.txt:91;Security And HTTPS.txt:17,48,78;Leader Election.txt:114;Client—Server Model.txt:40,70
+end|Availability.txt:53;Proxies.txt:47,77;Network Protocols.txt:47,77;Security And HTTPS.txt:51,81;Client—Server Model.txt:43,73
+user|Availability.txt:54;Proxies.txt:48,78;Network Protocols.txt:48,78;API Design.txt:145,155,218;Relational Databases.txt:60;Caching.txt:219;Rate Limiting.txt:76,113,121;Security And HTTPS.txt:52,82;Client—Server Model.txt:44,74,178;Storage.txt:59;Specialized Storage Paradigms.txt:182;Replication And Sharding.txt:169,305
+databas|Availability.txt:56;Proxies.txt:50,80;MapReduce.txt:93;Network Protocols.txt:50,80;Configuration.txt:70;Publish_Subscribe Pattern.txt:156;Hashing.txt:66;Relational Databases.txt:11,26,28,29,56,61,73,109,192,195,209,212,214,216,224,228,234,243,244,252,257,261,262,270,287,328,335,351,358,369,409,422;Caching.txt:138;Load Balancers.txt:53;Rate Limiting.txt:39;Key-Value Stores.txt:33,36,50,53,55,57,65,69,78;Security And HTTPS.txt:54,84;Leader Election.txt:107;Client—Server Model.txt:46,76;Storage.txt:12,27,28,55,60,72,108;Specialized Storage Paradigms.txt:9,12,26,29,31,33,41,45,51,60,61,69,74,78,79,92,105,112,128,135,146,156,177,217,266,270,290,292,302,312,326,331,353,358,378,388,390,400,620,627,635;Replication And Sharding.txt:4,137,138,165,170,182,218,247,280,289
+node|Availability.txt:57;MapReduce.txt:284;Leader Election.txt:13,121,135,142;Specialized Storage Paradigms.txt:308,426,431,434,438,441,455,459,465,472,489,503,508,536,541,549,590,593,637
+host|Availability.txt:59;Network Protocols.txt:201;API Design.txt:51;Security And HTTPS.txt:143;Specialized Storage Paradigms.txt:249
+thre|Availability.txt:60,142;Publish_Subscribe Pattern.txt:14;Security And HTTPS.txt:333
+term|Availability.txt:61;API Design.txt:139,258;Relational Databases.txt:247;Specialized Storage Paradigms.txt:64
+thing|Availability.txt:63,184,208;Proxies.txt:25;Relational Databases.txt:37;Client—Server Model.txt:1,5,11;Storage.txt:36;Specialized Storage Paradigms.txt:213;Replication And Sharding.txt:146
+virtual|Availability.txt:65;Security And HTTPS.txt:4
+physic|Availability.txt:66;Configuration.txt:18
+develop|Availability.txt:68;MapReduce.txt:325;Specialized Storage Paradigms.txt:350
+word|Availability.txt:72;MapReduce.txt:182
+also|Availability.txt:74;Network Protocols.txt:111;Hashing.txt:105;Relational Databases.txt:140,155,303,372;Rate Limiting.txt:84,181;Key-Value Stores.txt:124;Security And HTTPS.txt:272,407;Client—Server Model.txt:125,172;Storage.txt:139,154;Latency And Throughput.txt:46,61;Specialized Storage Paradigms.txt:149
+concept|Availability.txt:76;MapReduce.txt:25;Network Protocols.txt:12;Security And HTTPS.txt:16;Latency And Throughput.txt:19
+odd|Availability.txt:78;Rate Limiting.txt:10;Leader Election.txt:31;Replication And Sharding.txt:28
+particular|Availability.txt:79,104;Caching.txt:220;Rate Limiting.txt:11;Leader Election.txt:32,57;Replication And Sharding.txt:29
+point|Availability.txt:83;Relational Databases.txt:159;Caching.txt:245;Rate Limiting.txt:15;Security And HTTPS.txt:251;Leader Election.txt:36;Storage.txt:158;Latency And Throughput.txt:65;Specialized Storage Paradigms.txt:278,335;Replication And Sharding.txt:33
+measur|Availability.txt:86;Peer-To-Peer Networks.txt:46;Caching.txt:17,83;Rate Limiting.txt:18;Leader Election.txt:39;Latency And Throughput.txt:105,171;Replication And Sharding.txt:36,57,123
+percentag|Availability.txt:87,117;Rate Limiting.txt:19;Leader Election.txt:40;Replication And Sharding.txt:37
+99|Availability.txt:89,92,125,134,140,147,148,152;Rate Limiting.txt:21,24;Leader Election.txt:42,45;Replication And Sharding.txt:39,42
+oper|Availability.txt:91;MapReduce.txt:54,55,62,71,95,98,106,109;Publish_Subscribe Pattern.txt:117,118,125,134,158,161,169,172;API Design.txt:148,239,245,247;Relational Databases.txt:276;Peer-To-Peer Networks.txt:35;Caching.txt:13,72,126;Load Balancers.txt:15;Rate Limiting.txt:23;Leader Election.txt:44,133,189;Latency And Throughput.txt:101,160;Specialized Storage Paradigms.txt:579;Replication And Sharding.txt:41,53,112
+would|Availability.txt:94;API Design.txt:233;Peer-To-Peer Networks.txt:65;Rate Limiting.txt:26;Security And HTTPS.txt:217;Leader Election.txt:47;Replication And Sharding.txt:44
+describ|Availability.txt:95,102;Network Protocols.txt:266;Relational Databases.txt:2;Rate Limiting.txt:27;Security And HTTPS.txt:98;Leader Election.txt:48,55;Client—Server Model.txt:209;Replication And Sharding.txt:45
+nine|Availability.txt:97,110,114,121;Rate Limiting.txt:29;Leader Election.txt:50,63;Replication And Sharding.txt:47
+use|Availability.txt:101;Proxies.txt:1,91,113,128;MapReduce.txt:177;Network Protocols.txt:175,265;Configuration.txt:35,53,72;Publish_Subscribe Pattern.txt:15,185,186;API Design.txt:107,125,141,191;Hashing.txt:82,127,134;Relational Databases.txt:32,79,93,108,163,172,205,235,236,249,423;Peer-To-Peer Networks.txt:72;Caching.txt:117,158,196,203;Load Balancers.txt:30,68,132;Rate Limiting.txt:41,63,173,183;Key-Value Stores.txt:2,46,80,101,116,126,140;Security And HTTPS.txt:97,261,291,330,350,366,377,422,523,535;Leader Election.txt:54,161,203,218;Client—Server Model.txt:177,185;Storage.txt:31,78,92,107,162,171;Logging And Monitoring.txt:34,53;Latency And Throughput.txt:69,78;Specialized Storage Paradigms.txt:22,52,53,66,94,157,168,211,243,258,356,420,629;Replication And Sharding.txt:19,141,188,202,217,237,251,260
+level|Availability.txt:106,168,193;Network Protocols.txt:10;Rate Limiting.txt:75,78,80;Leader Election.txt:59;Client—Server Model.txt:179;Specialized Storage Paradigms.txt:340
+typic|Availability.txt:108,115,178,202;Proxies.txt:90,112;MapReduce.txt:77,245;Network Protocols.txt:198,233;Configuration.txt:90;Publish_Subscribe Pattern.txt:140;API Design.txt:48,83;Relational Databases.txt:162,342;Caching.txt:109,157;Load Balancers.txt:29;Rate Limiting.txt:172;Key-Value Stores.txt:115;Security And HTTPS.txt:140,175,247,473;Leader Election.txt:2,61;Client—Server Model.txt:165,218;Storage.txt:161;Logging And Monitoring.txt:57,78;Latency And Throughput.txt:68;Specialized Storage Paradigms.txt:119,439,628;Replication And Sharding.txt:236,285
+5|Availability.txt:109,120,154;Rate Limiting.txt:96;Leader Election.txt:62
+abbrevi|Availability.txt:112;Leader Election.txt:65
+ha|Availability.txt:113;Leader Election.txt:66
+uptim|Availability.txt:118,124
+exampl|Availability.txt:119;MapReduce.txt:89,175;Network Protocols.txt:203,208,213,223,239,245;Configuration.txt:42,55;Publish_Subscribe Pattern.txt:152;API Design.txt:53,58,63,73,89,95,114,127;Caching.txt:167;Rate Limiting.txt:81;Security And HTTPS.txt:145,150,155,165,181,187;Client—Server Model.txt:193;Logging And Monitoring.txt:41;Specialized Storage Paradigms.txt:284,342,370,446
+mean|Availability.txt:123;Configuration.txt:96,108;Relational Databases.txt:81;Caching.txt:230;Storage.txt:80;Replication And Sharding.txt:190
+999|Availability.txt:126,153
+downtim|Availability.txt:128
+expect|Availability.txt:129
+per|Availability.txt:130;Peer-To-Peer Networks.txt:39,48;Caching.txt:76,85;Rate Limiting.txt:94,97,101;Latency And Throughput.txt:164,173;Specialized Storage Paradigms.txt:178;Replication And Sharding.txt:116,125
+year|Availability.txt:131
+depend|Availability.txt:132;Specialized Storage Paradigms.txt:255
+9s|Availability.txt:133,136,143
+87|Availability.txt:137
+7|Availability.txt:138
+hour|Availability.txt:139,146
+9|Availability.txt:141
+8|Availability.txt:144,145
+52|Availability.txt:149
+6|Availability.txt:150
+minut|Availability.txt:151,156;Relational Databases.txt:419;Rate Limiting.txt:102;Leader Election.txt:117
+3|Availability.txt:155;MapReduce.txt:131;Hashing.txt:131
+redund|Availability.txt:157;Leader Election.txt:67;Replication And Sharding.txt:15,129,253
+replic|Availability.txt:159;MapReduce.txt:251;Leader Election.txt:69;Replication And Sharding.txt:131,242,261
+part|Availability.txt:160;Hashing.txt:61;Relational Databases.txt:71;Load Balancers.txt:48;Security And HTTPS.txt:265,423;Leader Election.txt:70;Storage.txt:70;Specialized Storage Paradigms.txt:550,561;Replication And Sharding.txt:132,180
+effort|Availability.txt:162;Rate Limiting.txt:177;Key-Value Stores.txt:120;Leader Election.txt:72;Specialized Storage Paradigms.txt:359;Replication And Sharding.txt:134
+reliabl|Availability.txt:164;Network Protocols.txt:160;Leader Election.txt:74;Replication And Sharding.txt:26,136
+sla|Availability.txt:165,170,211
+short|Availability.txt:166,191;API Design.txt:135;Hashing.txt:118;Relational Databases.txt:178;Caching.txt:90;Rate Limiting.txt:105,139;Client—Server Model.txt:205;Storage.txt:177;Latency And Throughput.txt:84
+agreem|Availability.txt:169
+collect|Availability.txt:171;Hashing.txt:123;Peer-To-Peer Networks.txt:55;Logging And Monitoring.txt:50,80
+guarante|Availability.txt:172,180,196,204;MapReduce.txt:252;Publish_Subscribe Pattern.txt:106,202;Relational Databases.txt:407;Leader Election.txt:105,141;Specialized Storage Paradigms.txt:198
+given|Availability.txt:173,197;Network Protocols.txt:84;Leader Election.txt:147;Client—Server Model.txt:98;Specialized Storage Paradigms.txt:281,462,538,573
+custom|Availability.txt:174,198
+slas|Availability.txt:177,185
+amongst|Availability.txt:183,207;Proxies.txt:24;Load Balancers.txt:64;Leader Election.txt:130,170
+made|Availability.txt:186;Client—Server Model.txt:12
+one|Availability.txt:187;MapReduce.txt:228;Network Protocols.txt:18;Relational Databases.txt:355;Key-Value Stores.txt:0;Security And HTTPS.txt:250;Leader Election.txt:145;Client—Server Model.txt:17,231;Specialized Storage Paradigms.txt:132;Replication And Sharding.txt:246,309
+multipl|Availability.txt:188;MapReduce.txt:64,87;Publish_Subscribe Pattern.txt:127,150;Relational Databases.txt:309,356;Load Balancers.txt:5,65;Leader Election.txt:162;Client—Server Model.txt:145,230;Storage.txt:6;Specialized Storage Paradigms.txt:133,339
+slos|Availability.txt:189,201,209
+slo|Availability.txt:190,195
+object|Availability.txt:194;Configuration.txt:40;API Design.txt:112;Logging And Monitoring.txt:39
+constitut|Availability.txt:210;Relational Databases.txt:277
+often|Proxies.txt:0,100,127;Configuration.txt:71;Publish_Subscribe Pattern.txt:66,103;API Design.txt:140,151,190,248;Hashing.txt:81;Relational Databases.txt:100,201,225,248,364;Peer-To-Peer Networks.txt:45,71;Caching.txt:16,82,116,242;Load Balancers.txt:131;Rate Limiting.txt:40,62,182;Key-Value Stores.txt:42,66,79,100,125,139;Leader Election.txt:202,217;Storage.txt:99;Latency And Throughput.txt:104,170;Specialized Storage Paradigms.txt:18,42,65,93,141,259,328,365;Replication And Sharding.txt:2,56,122,209
+nefari|Proxies.txt:2
+hacker|Proxies.txt:3
+conceal|Proxies.txt:4
+ident|Proxies.txt:5,94
+obfusc|Proxies.txt:6
+locat|Proxies.txt:7;Caching.txt:223;Specialized Storage Paradigms.txt:397,412,447,498,517,529,545,574,587
+speci|Proxies.txt:8;Relational Databases.txt:330;Specialized Storage Paradigms.txt:107,268
+intermediari|Proxies.txt:9
+boast|Proxies.txt:11
+mani|Proxies.txt:12;MapReduce.txt:37,59,311;Publish_Subscribe Pattern.txt:122;API Design.txt:256;Hashing.txt:60;Load Balancers.txt:47;Rate Limiting.txt:4,153;Specialized Storage Paradigms.txt:552
+import|Proxies.txt:13;Relational Databases.txt:273;Key-Value Stores.txt:142;Security And HTTPS.txt:3;Leader Election.txt:220;Storage.txt:20;Logging And Monitoring.txt:81
+real|Proxies.txt:14
+life|Proxies.txt:15
+applic|Proxies.txt:16;Network Protocols.txt:174,226;Configuration.txt:5,101,112;API Design.txt:76;Relational Databases.txt:48;Caching.txt:217;Security And HTTPS.txt:168;Storage.txt:47;Logging And Monitoring.txt:29;Replication And Sharding.txt:157
+within|Proxies.txt:17;Relational Databases.txt:413;Leader Election.txt:111;Logging And Monitoring.txt:6,17
+context|Proxies.txt:18;Publish_Subscribe Pattern.txt:17;Specialized Storage Paradigms.txt:237
+cach|Proxies.txt:19,117;Configuration.txt:73;Caching.txt:2,103,115,129,140,143,144,149,150,156,177,179,187,189,213;Load Balancers.txt:34;Rate Limiting.txt:42,178;Key-Value Stores.txt:81,121;Specialized Storage Paradigms.txt:95;Replication And Sharding.txt:241
+access|Proxies.txt:20;API Design.txt:136;Relational Databases.txt:151,166,175,180;Caching.txt:92;Storage.txt:150,165,174,179;Latency And Throughput.txt:57,72,81,86;Replication And Sharding.txt:269
+control|Proxies.txt:21;MapReduce.txt:275;API Design.txt:137
+censorship|Proxies.txt:22
+bypass|Proxies.txt:23
+forward|Proxies.txt:81,98;Hashing.txt:92;Caching.txt:172
+proxi|Proxies.txt:82,99,102,104,130;Hashing.txt:52;Load Balancers.txt:21,39,134;Replication And Sharding.txt:228
+sit|Proxies.txt:84,106;Load Balancers.txt:23;Replication And Sharding.txt:230
+behalf|Proxies.txt:88,110;Load Balancers.txt:27;Replication And Sharding.txt:234
+mask|Proxies.txt:92
+ip|Proxies.txt:95;Network Protocols.txt:0,81,129,149,157,253,260,269,272,275,280;Load Balancers.txt:90;Rate Limiting.txt:73;Security And HTTPS.txt:85,92,101,104,107,112,212;Client—Server Model.txt:95,216,228
+address|Proxies.txt:96;Network Protocols.txt:82,83,90,281;Rate Limiting.txt:74;Security And HTTPS.txt:113;Client—Server Model.txt:96,97,104,217,229
+revers|Proxies.txt:103,129;Hashing.txt:51;Load Balancers.txt:20,38,133;Replication And Sharding.txt:227
+log|Proxies.txt:114;Load Balancers.txt:31;Logging And Monitoring.txt:48,52,60,69;Replication And Sharding.txt:238
+load|Proxies.txt:115,131;Hashing.txt:48,57,83;Caching.txt:170;Load Balancers.txt:32,35,44,58,135;Replication And Sharding.txt:239
+balanc|Proxies.txt:116,132;Hashing.txt:49,58,84;Caching.txt:171;Load Balancers.txt:33,36,45,59,136;Replication And Sharding.txt:240
+nginx|Proxies.txt:118,124;Load Balancers.txt:122,128
+pronounc|Proxies.txt:119;Load Balancers.txt:123
+engin|Proxies.txt:120;MapReduce.txt:189;Load Balancers.txt:124
+x|Proxies.txt:121;Network Protocols.txt:116;Load Balancers.txt:125;Client—Server Model.txt:130;Specialized Storage Paradigms.txt:582,584
+n|Proxies.txt:122;Load Balancers.txt:126;Specialized Storage Paradigms.txt:453,505,516,528,544
+jinx|Proxies.txt:123;Load Balancers.txt:127
+popular|Proxies.txt:125;MapReduce.txt:116,233,304;Configuration.txt:76;Publish_Subscribe Pattern.txt:73;Hashing.txt:132;Caching.txt:188,248;Load Balancers.txt:129;Rate Limiting.txt:45;Key-Value Stores.txt:84;Leader Election.txt:174;Specialized Storage Paradigms.txt:98,376,615,622,633;Replication And Sharding.txt:290
+webserv|Proxies.txt:126;Load Balancers.txt:130
+mapreduc|MapReduce.txt:0,115,128,176,187,206,212,309
+gener|MapReduce.txt:4;Publish_Subscribe Pattern.txt:55;Relational Databases.txt:42,136;Security And HTTPS.txt:290,530;Storage.txt:41,135,195;Latency And Throughput.txt:42;Replication And Sharding.txt:151
+big|MapReduce.txt:5;Logging And Monitoring.txt:27
+set|MapReduce.txt:7,102,122,257;Configuration.txt:11,84;Publish_Subscribe Pattern.txt:165;Peer-To-Peer Networks.txt:78;Load Balancers.txt:98;Leader Election.txt:125,192;Logging And Monitoring.txt:99;Replication And Sharding.txt:328
+parallel|MapReduce.txt:8,202
+distribut|MapReduce.txt:9,121,214,217,241,255,320;Publish_Subscribe Pattern.txt:180;Hashing.txt:53,85,113;Peer-To-Peer Networks.txt:74;Load Balancers.txt:1,40,62,95;Rate Limiting.txt:140;Leader Election.txt:9,191;Replication And Sharding.txt:325
+algorithm|MapReduce.txt:10;Hashing.txt:121;Security And HTTPS.txt:255,264,293,318,336;Leader Election.txt:15,18,157,160,176,183
+clust|MapReduce.txt:11,223,272
+wikipedia|MapReduce.txt:12
+nebul|MapReduce.txt:13
+definit|MapReduce.txt:14
+confus|MapReduce.txt:15
+cours|MapReduce.txt:16;Leader Election.txt:16
+map|MapReduce.txt:18,134,137,194;Hashing.txt:114;Specialized Storage Paradigms.txt:398,448
+complex|MapReduce.txt:19;Leader Election.txt:159;Storage.txt:17;Specialized Storage Paradigms.txt:319
+topic|MapReduce.txt:20;Publish_Subscribe Pattern.txt:83,95,99;Storage.txt:18
+reduc|MapReduce.txt:21,161,164,195
+clear|MapReduce.txt:22
+easili|MapReduce.txt:23;Configuration.txt:26;Rate Limiting.txt:129
+understood|MapReduce.txt:24
+see|MapReduce.txt:26;Relational Databases.txt:149,300;Storage.txt:9,148;Latency And Throughput.txt:55
+ʖ|MapReduce.txt:27
+abstract|MapReduce.txt:30,208,220
+storag|MapReduce.txt:31,302;Publish_Subscribe Pattern.txt:51,57,111;Relational Databases.txt:144,321;Rate Limiting.txt:170;Key-Value Stores.txt:19,113;Storage.txt:3,15,143,191,197;Latency And Throughput.txt:50;Specialized Storage Paradigms.txt:3,7,166,170,225,247,257,263,596,599,606
+medium|MapReduce.txt:32
+defin|MapReduce.txt:33;Configuration.txt:8,17;API Design.txt:154;Client—Server Model.txt:184;Logging And Monitoring.txt:100;Specialized Storage Paradigms.txt:304
+manag|MapReduce.txt:34;Publish_Subscribe Pattern.txt:61;Storage.txt:201
+exist|MapReduce.txt:36;Hashing.txt:98;Relational Databases.txt:343;Specialized Storage Paradigms.txt:120
+differ|MapReduce.txt:38,288,292;Hashing.txt:34,93;Rate Limiting.txt:154;Specialized Storage Paradigms.txt:197
+type|MapReduce.txt:39;Network Protocols.txt:225;API Design.txt:75;Hashing.txt:29,50,70,103;Relational Databases.txt:193,215,269;Load Balancers.txt:37;Rate Limiting.txt:88;Key-Value Stores.txt:15,34,56;Security And HTTPS.txt:167,231;Leader Election.txt:158;Specialized Storage Paradigms.txt:10,32,291,389;Replication And Sharding.txt:300
+follow|MapReduce.txt:42;Network Protocols.txt:199,234;API Design.txt:49,84;Relational Databases.txt:198;Key-Value Stores.txt:39;Security And HTTPS.txt:141,176,478;Specialized Storage Paradigms.txt:15,295,506
+hierarch|MapReduce.txt:43
+structur|MapReduce.txt:44,52;Relational Databases.txt:194,221,230,333,345;Key-Value Stores.txt:30,35,62;Specialized Storage Paradigms.txt:11,38,47,110,122,317,418;Replication And Sharding.txt:321
+directori|MapReduce.txt:46
+unix|MapReduce.txt:49
+idempot|MapReduce.txt:53,70,78,94,105;Publish_Subscribe Pattern.txt:116,133,141,157,168
+ultim|MapReduce.txt:56;Publish_Subscribe Pattern.txt:119
+outcom|MapReduce.txt:57;Publish_Subscribe Pattern.txt:120
+regardless|MapReduce.txt:58;Publish_Subscribe Pattern.txt:121
+perform|MapReduce.txt:61,63,72,100;Publish_Subscribe Pattern.txt:124,126,135,163;API Design.txt:147,207;Relational Databases.txt:336;Load Balancers.txt:17,75,81;Key-Value Stores.txt:144;Leader Election.txt:222;Specialized Storage Paradigms.txt:113,318,407;Replication And Sharding.txt:1
+without|MapReduce.txt:66;Publish_Subscribe Pattern.txt:87,129;Peer-To-Peer Networks.txt:87;Client—Server Model.txt:152
+chang|MapReduce.txt:67;Publish_Subscribe Pattern.txt:130
+overal|MapReduce.txt:68;Publish_Subscribe Pattern.txt:131;Replication And Sharding.txt:25
+effect|MapReduce.txt:69,99;Network Protocols.txt:262;Publish_Subscribe Pattern.txt:132,162;Relational Databases.txt:301,312;Security And HTTPS.txt:94,431
+pub|MapReduce.txt:73,80;Publish_Subscribe Pattern.txt:68,100,136,143,192,196
+sub|MapReduce.txt:74,81;Publish_Subscribe Pattern.txt:69,101,137,144,193,197;Specialized Storage Paradigms.txt:486
+messag|MapReduce.txt:75,85;Publish_Subscribe Pattern.txt:74,81,92,97,113,115,138,148,181,198,205,210;Logging And Monitoring.txt:61
+sinc|MapReduce.txt:79,96,107;Publish_Subscribe Pattern.txt:142,159,170;API Design.txt:217;Relational Databases.txt:97,370;Storage.txt:96;Specialized Storage Paradigms.txt:147,354,588;Replication And Sharding.txt:206
+tend|MapReduce.txt:83;Publish_Subscribe Pattern.txt:146;Security And HTTPS.txt:256,319
+allow|MapReduce.txt:84,225;Network Protocols.txt:158;Publish_Subscribe Pattern.txt:147;Hashing.txt:111;Relational Databases.txt:334;Leader Election.txt:186;Specialized Storage Paradigms.txt:111,181
+consum|MapReduce.txt:86;Publish_Subscribe Pattern.txt:5,149
+increas|MapReduce.txt:90;Publish_Subscribe Pattern.txt:153;Replication And Sharding.txt:252,287
+integ|MapReduce.txt:91;Network Protocols.txt:207,238;Publish_Subscribe Pattern.txt:154;API Design.txt:57,88;Security And HTTPS.txt:149,180;Client—Server Model.txt:158
+valu|MapReduce.txt:92,103,113,146,153,169;Network Protocols.txt:103;Configuration.txt:63,66;Publish_Subscribe Pattern.txt:155,166,176;Caching.txt:183;Rate Limiting.txt:32,35,166;Key-Value Stores.txt:7,71,74,98,109,137;Leader Election.txt:167,200,215;Client—Server Model.txt:117;Specialized Storage Paradigms.txt:85,88,192,203,386
+repeat|MapReduce.txt:97,108;Publish_Subscribe Pattern.txt:160,171
+convers|MapReduce.txt:101;Publish_Subscribe Pattern.txt:164
+complet|MapReduce.txt:104,114;Publish_Subscribe Pattern.txt:167,177;Peer-To-Peer Networks.txt:62;Caching.txt:14;Latency And Throughput.txt:102;Replication And Sharding.txt:54
+yield|MapReduce.txt:111;Publish_Subscribe Pattern.txt:174
+result|MapReduce.txt:112;Publish_Subscribe Pattern.txt:175;Caching.txt:123,176;Key-Value Stores.txt:16
+framework|MapReduce.txt:117,307
+dataset|MapReduce.txt:120,141
+effici|MapReduce.txt:123
+quick|MapReduce.txt:124;Specialized Storage Paradigms.txt:406
+fault|MapReduce.txt:125,204;Replication And Sharding.txt:22
+toler|MapReduce.txt:126,205;Replication And Sharding.txt:23,255
+job|MapReduce.txt:129,207,310;Security And HTTPS.txt:28
+compris|MapReduce.txt:130
+main|MapReduce.txt:132;Caching.txt:132,137
+step|MapReduce.txt:133,135,149,160,162;Security And HTTPS.txt:474
+function|MapReduce.txt:138,196;API Design.txt:251;Hashing.txt:24,25,40,126;Load Balancers.txt:108;Replication And Sharding.txt:338
+various|MapReduce.txt:139;Logging And Monitoring.txt:14
+chunk|MapReduce.txt:140,143,262,268,279
+transform|MapReduce.txt:142,171
+intermedi|MapReduce.txt:144,151
+key|MapReduce.txt:145,152,156,168;Network Protocols.txt:23;Configuration.txt:62,65;Hashing.txt:74;Relational Databases.txt:8;Load Balancers.txt:106;Rate Limiting.txt:31,34,165;Key-Value Stores.txt:6,70,73,97,108,136;Security And HTTPS.txt:15,235,239,254,263,275,281,283,285,289,299,302,304,313,317,335,421,434,500,519,534;Leader Election.txt:199,214;Logging And Monitoring.txt:75;Specialized Storage Paradigms.txt:84,87,191;Replication And Sharding.txt:336
+pair|MapReduce.txt:147,154,155,170;Network Protocols.txt:221,243;API Design.txt:71,93;Security And HTTPS.txt:163,185
+shuffl|MapReduce.txt:148,167
+reorgan|MapReduce.txt:150
+rout|MapReduce.txt:157,281;Load Balancers.txt:92
+final|MapReduce.txt:159;API Design.txt:20
+funct|MapReduce.txt:165
+newli|MapReduce.txt:166
+meaning|MapReduce.txt:172
+canon|MapReduce.txt:174
+case|MapReduce.txt:178;API Design.txt:232;Relational Databases.txt:240;Specialized Storage Paradigms.txt:57
+count|MapReduce.txt:179;Specialized Storage Paradigms.txt:176
+number|MapReduce.txt:180;Network Protocols.txt:93,99;Hashing.txt:33,73,89;Peer-To-Peer Networks.txt:34;Caching.txt:71;Rate Limiting.txt:56,65;Client—Server Model.txt:107,113;Latency And Throughput.txt:159;Specialized Storage Paradigms.txt:452;Replication And Sharding.txt:111
+occurr|MapReduce.txt:181
+text|MapReduce.txt:184
+deal|MapReduce.txt:186;Specialized Storage Paradigms.txt:332
+librari|MapReduce.txt:188
+administr|MapReduce.txt:191;Logging And Monitoring.txt:91
+ne|MapReduce.txt:192;Security And HTTPS.txt:21
+worri|MapReduce.txt:193
+well|MapReduce.txt:197;Network Protocols.txt:282;API Design.txt:208;Caching.txt:122;Security And HTTPS.txt:18,114,495;Client—Server Model.txt:174,223;Specialized Storage Paradigms.txt:475
+input|MapReduce.txt:198;Hashing.txt:35
+output|MapReduce.txt:199;Hashing.txt:32,37;Logging And Monitoring.txt:59
+concern|MapReduce.txt:200
+includ|MapReduce.txt:201;Network Protocols.txt:104;Configuration.txt:78;Caching.txt:192;Load Balancers.txt:70;Rate Limiting.txt:47;Key-Value Stores.txt:86;Client—Server Model.txt:118;Specialized Storage Paradigms.txt:100;Replication And Sharding.txt:293
+task|MapReduce.txt:203
+away|MapReduce.txt:209
+taken|MapReduce.txt:210
+care|MapReduce.txt:211,248;Publish_Subscribe Pattern.txt:88;Peer-To-Peer Networks.txt:2
+implement|MapReduce.txt:213,234,290
+dfs|MapReduce.txt:235,289
+googl|MapReduce.txt:236;Publish_Subscribe Pattern.txt:201;Caching.txt:251;Specialized Storage Paradigms.txt:232,250,594,602
+gfs|MapReduce.txt:239
+hadoop|MapReduce.txt:240,303,319
+hdfs|MapReduce.txt:244,318
+dfss|MapReduce.txt:246
+take|MapReduce.txt:247;Hashing.txt:26;Relational Databases.txt:373;Caching.txt:4,11;Latency And Throughput.txt:99;Specialized Storage Paradigms.txt:150,313;Replication And Sharding.txt:51
+tricki|MapReduce.txt:253;Rate Limiting.txt:135
+obtain|MapReduce.txt:254
+overarch|MapReduce.txt:258
+idea|MapReduce.txt:259
+split|MapReduce.txt:261;Specialized Storage Paradigms.txt:468;Replication And Sharding.txt:279
+certain|MapReduce.txt:263;API Design.txt:159;Relational Databases.txt:337;Caching.txt:12;Leader Election.txt:188;Client—Server Model.txt:181;Latency And Throughput.txt:100;Specialized Storage Paradigms.txt:114;Replication And Sharding.txt:52
+size|MapReduce.txt:264
+4mb|MapReduce.txt:265
+64mb|MapReduce.txt:266
+shard|MapReduce.txt:269;Load Balancers.txt:105;Replication And Sharding.txt:272,277,284,291,294,298,310,316,317,335
+across|MapReduce.txt:270;Hashing.txt:55;Load Balancers.txt:4,42,97;Specialized Storage Paradigms.txt:469;Replication And Sharding.txt:327
+central|MapReduce.txt:274;Peer-To-Peer Networks.txt:89;Logging And Monitoring.txt:68
+plane|MapReduce.txt:276
+charg|MapReduce.txt:277;Publish_Subscribe Pattern.txt:60;Storage.txt:200
+decid|MapReduce.txt:278
+resid|MapReduce.txt:280
+handl|MapReduce.txt:285;Peer-To-Peer Networks.txt:37;Caching.txt:74;Latency And Throughput.txt:162;Replication And Sharding.txt:114
+slight|MapReduce.txt:291;Relational Databases.txt:366;Specialized Storage Paradigms.txt:143
+api|MapReduce.txt:293;Configuration.txt:36;API Design.txt:14,108,150,170,225,235,257,262;Logging And Monitoring.txt:35
+semant|MapReduce.txt:294
+achiev|MapReduce.txt:295;Security And HTTPS.txt:401
+common|MapReduce.txt:296;Network Protocols.txt:184;API Design.txt:34;Caching.txt:3;Load Balancers.txt:67;Key-Value Stores.txt:1;Security And HTTPS.txt:126;Specialized Storage Paradigms.txt:419
+goal|MapReduce.txt:297
+extrem|MapReduce.txt:298;Specialized Storage Paradigms.txt:577
+scale|MapReduce.txt:300;Relational Databases.txt:102;Storage.txt:101;Specialized Storage Paradigms.txt:173;Replication And Sharding.txt:211
+persist|MapReduce.txt:301;Publish_Subscribe Pattern.txt:50,58,110;Relational Databases.txt:75,133;Rate Limiting.txt:169;Key-Value Stores.txt:112;Storage.txt:74,132,190,198;Latency And Throughput.txt:39;Replication And Sharding.txt:184
+sourc|MapReduce.txt:306;Network Protocols.txt:278;Peer-To-Peer Networks.txt:90;Caching.txt:133;Rate Limiting.txt:155;Security And HTTPS.txt:110;Specialized Storage Paradigms.txt:617,624
+support|MapReduce.txt:308;Publish_Subscribe Pattern.txt:206;Relational Databases.txt:202,245,258;Key-Value Stores.txt:43;Leader Election.txt:136;Specialized Storage Paradigms.txt:19,62,75,235
+pipelin|MapReduce.txt:315
+centr|MapReduce.txt:316
+compon|MapReduce.txt:317
+top|MapReduce.txt:323;Network Protocols.txt:148,154,188;API Design.txt:38;Relational Databases.txt:52;Security And HTTPS.txt:130,356,385;Storage.txt:51;Replication And Sharding.txt:161
+technol|MapReduce.txt:324
+packet|Network Protocols.txt:1,254,259,261,273;Security And HTTPS.txt:86,91,93,105,213
+header|Network Protocols.txt:3,220,242,276;API Design.txt:70,92;Security And HTTPS.txt:108,162,184
+http|Network Protocols.txt:4,146,180,192;API Design.txt:30,42;Relational Databases.txt:55;Security And HTTPS.txt:122,134,365,398,405;Client—Server Model.txt:201;Storage.txt:54;Replication And Sharding.txt:164
+daunt|Network Protocols.txt:6
+seem|Network Protocols.txt:8
+low|Network Protocols.txt:9;Latency And Throughput.txt:10
+essenti|Network Protocols.txt:13
+understand|Network Protocols.txt:14;Security And HTTPS.txt:14;Logging And Monitoring.txt:2
+anoth|Network Protocols.txt:19;Caching.txt:224;Security And HTTPS.txt:252,491,511;Client—Server Model.txt:18;Specialized Storage Paradigms.txt:1;Replication And Sharding.txt:315
+know|Network Protocols.txt:20;Publish_Subscribe Pattern.txt:90;Caching.txt:23;Leader Election.txt:144;Latency And Throughput.txt:111;Replication And Sharding.txt:63
+prop|Network Protocols.txt:21
+thrive|Network Protocols.txt:24
+relationship|Network Protocols.txt:25;Specialized Storage Paradigms.txt:305,341,638
+public|Network Protocols.txt:87,164;Security And HTTPS.txt:274,282,298,312,420,433,499,518;Client—Server Model.txt:101
+internet|Network Protocols.txt:88,131,155,165;Client—Server Model.txt:20,102
+ipv4|Network Protocols.txt:89;Client—Server Model.txt:103
+four|Network Protocols.txt:92,98;API Design.txt:246;Relational Databases.txt:272;Client—Server Model.txt:106,112;Specialized Storage Paradigms.txt:436,463,470,485,521,533,539,591
+separ|Network Protocols.txt:94;Client—Server Model.txt:108
+dot|Network Protocols.txt:95;Client—Server Model.txt:109
+b|Network Protocols.txt:96;Client—Server Model.txt:110
+c|Network Protocols.txt:97;Client—Server Model.txt:111
+0|Network Protocols.txt:100,106,107;Configuration.txt:45,58;API Design.txt:117,130;Caching.txt:32;Client—Server Model.txt:114,120,121,159,167;Logging And Monitoring.txt:44;Latency And Throughput.txt:120;Replication And Sharding.txt:72
+255|Network Protocols.txt:101;Client—Server Model.txt:115
+special|Network Protocols.txt:102;Publish_Subscribe Pattern.txt:82;Relational Databases.txt:104;Client—Server Model.txt:116;Storage.txt:103;Replication And Sharding.txt:213
+127|Network Protocols.txt:105;Client—Server Model.txt:119
+1|Network Protocols.txt:108;Configuration.txt:44,57;API Design.txt:116,129;Caching.txt:27,36,39,42,45;Rate Limiting.txt:93;Client—Server Model.txt:122;Logging And Monitoring.txt:43;Latency And Throughput.txt:115,124,127,130,133;Replication And Sharding.txt:67,76,79,82,85
+local|Network Protocols.txt:109;Client—Server Model.txt:123
+localhost|Network Protocols.txt:113;Client—Server Model.txt:127
+192|Network Protocols.txt:114,126;Security And HTTPS.txt:340;Client—Server Model.txt:128,140
+168|Network Protocols.txt:115,127;Client—Server Model.txt:129,141
+privat|Network Protocols.txt:117,122;Security And HTTPS.txt:204,284,301,303;Client—Server Model.txt:131,136
+wifi|Network Protocols.txt:123;Client—Server Model.txt:137
+prefix|Network Protocols.txt:128;Client—Server Model.txt:142
+stand|Network Protocols.txt:130;Configuration.txt:38;API Design.txt:110,240;Security And HTTPS.txt:324;Logging And Monitoring.txt:37
+protocol|Network Protocols.txt:132,134,142,152,156,183,186;API Design.txt:33,36;Relational Databases.txt:51;Peer-To-Peer Networks.txt:77;Security And HTTPS.txt:125,128,362,383,397;Client—Server Model.txt:211;Storage.txt:50;Replication And Sharding.txt:160
+outlin|Network Protocols.txt:135
+almost|Network Protocols.txt:136;Caching.txt:234
+happen|Network Protocols.txt:140;Load Balancers.txt:104;Replication And Sharding.txt:334
+world|Network Protocols.txt:141;Caching.txt:229;Specialized Storage Paradigms.txt:499,511,515,525
+udp|Network Protocols.txt:145
+built|Network Protocols.txt:147,153;Security And HTTPS.txt:384
+order|Network Protocols.txt:159;Publish_Subscribe Pattern.txt:112,208;Caching.txt:24;Rate Limiting.txt:68,118;Security And HTTPS.txt:400;Client—Server Model.txt:144;Logging And Monitoring.txt:0;Latency And Throughput.txt:112;Replication And Sharding.txt:64
+deliveri|Network Protocols.txt:162;Publish_Subscribe Pattern.txt:109,204;Caching.txt:205
+creat|Network Protocols.txt:166;Publish_Subscribe Pattern.txt:183,200;API Design.txt:241;Relational Databases.txt:353;Load Balancers.txt:119;Logging And Monitoring.txt:11;Specialized Storage Paradigms.txt:130;Replication And Sharding.txt:349
+implem|Network Protocols.txt:170,187;API Design.txt:37;Rate Limiting.txt:85,184;Key-Value Stores.txt:102,127;Security And HTTPS.txt:129;Leader Election.txt:138,184,204;Logging And Monitoring.txt:79
+kernel|Network Protocols.txt:171
+expos|Network Protocols.txt:172
+hypertext|Network Protocols.txt:181;API Design.txt:31;Security And HTTPS.txt:123,360
+transf|Network Protocols.txt:182;API Design.txt:32;Caching.txt:44;Security And HTTPS.txt:124,361;Latency And Throughput.txt:132;Replication And Sharding.txt:84
+respond|Network Protocols.txt:195;API Design.txt:45,228;Security And HTTPS.txt:137,488
+respons|Network Protocols.txt:196,232;API Design.txt:46,82,168,176,180,236;Caching.txt:119;Load Balancers.txt:85;Security And HTTPS.txt:138,174;Leader Election.txt:131;Client—Server Model.txt:226,235
+schema|Network Protocols.txt:200,235;API Design.txt:50,85;Security And HTTPS.txt:142,177
+string|Network Protocols.txt:202,212;API Design.txt:52,62;Hashing.txt:30;Security And HTTPS.txt:144,154,483,492,512
+algoexpert|Network Protocols.txt:204;Configuration.txt:47,60;API Design.txt:54,119,132;Security And HTTPS.txt:146;Logging And Monitoring.txt:46
+io|Network Protocols.txt:205;API Design.txt:55;Security And HTTPS.txt:147
+port|Network Protocols.txt:206;API Design.txt:56;Security And HTTPS.txt:148;Client—Server Model.txt:143,155,157,163,166,171,176,182
+80|Network Protocols.txt:209;API Design.txt:59;Security And HTTPS.txt:151;Client—Server Model.txt:200
+443|Network Protocols.txt:210;API Design.txt:60;Security And HTTPS.txt:152;Client—Server Model.txt:202
+method|Network Protocols.txt:211;API Design.txt:61;Security And HTTPS.txt:153
+put|Network Protocols.txt:215;API Design.txt:65;Security And HTTPS.txt:157
+post|Network Protocols.txt:216;API Design.txt:66;Security And HTTPS.txt:158
+delet|Network Protocols.txt:217;API Design.txt:67,156,244;Security And HTTPS.txt:159
+option|Network Protocols.txt:218;Configuration.txt:77;API Design.txt:68;Rate Limiting.txt:46,171;Key-Value Stores.txt:85,114;Security And HTTPS.txt:160;Specialized Storage Paradigms.txt:99
+patch|Network Protocols.txt:219;API Design.txt:69;Security And HTTPS.txt:161
+list|Network Protocols.txt:222,244;API Design.txt:72,94,138,193,197,205,231;Security And HTTPS.txt:164,186
+json|Network Protocols.txt:227;Configuration.txt:31,92;API Design.txt:77,103;Security And HTTPS.txt:169;Logging And Monitoring.txt:30
+bodi|Network Protocols.txt:228,249;API Design.txt:78,99;Security And HTTPS.txt:170,191
+opaqu|Network Protocols.txt:229,250;API Design.txt:79,100;Security And HTTPS.txt:171,192
+sequenc|Network Protocols.txt:230,251;API Design.txt:80,101;Security And HTTPS.txt:172,193
+byte|Network Protocols.txt:231,252,271;API Design.txt:81,102;Security And HTTPS.txt:103,173,194,485,494,514
+status|Network Protocols.txt:236;API Design.txt:86;Security And HTTPS.txt:178
+code|Network Protocols.txt:237;Configuration.txt:98,102,105,113;API Design.txt:87;Security And HTTPS.txt:179
+200|Network Protocols.txt:240;API Design.txt:90;Security And HTTPS.txt:182
+401|Network Protocols.txt:241;API Design.txt:91;Security And HTTPS.txt:183
+length|Network Protocols.txt:247;API Design.txt:97;Security And HTTPS.txt:189
+1238|Network Protocols.txt:248;API Design.txt:98;Security And HTTPS.txt:190
+broad|Network Protocols.txt:256;Security And HTTPS.txt:88
+smallest|Network Protocols.txt:263;Security And HTTPS.txt:95
+unit|Network Protocols.txt:264;Peer-To-Peer Networks.txt:41;Caching.txt:78;Security And HTTPS.txt:96;Latency And Throughput.txt:166;Replication And Sharding.txt:118
+sent|Network Protocols.txt:268,288;Rate Limiting.txt:58;Security And HTTPS.txt:100,120;Logging And Monitoring.txt:107
+asid|Network Protocols.txt:270;Security And HTTPS.txt:102
+contain|Network Protocols.txt:277;Security And HTTPS.txt:109,418,498;Specialized Storage Paradigms.txt:442
+destin|Network Protocols.txt:279;Security And HTTPS.txt:111
+relat|Network Protocols.txt:284;Relational Databases.txt:10,191,208,211,223,233,251,256,350,421;Key-Value Stores.txt:32,49,52,64;Security And HTTPS.txt:116,468;Specialized Storage Paradigms.txt:8,25,28,40,50,68,73,127,155,330
+payload|Network Protocols.txt:286;Security And HTTPS.txt:118
+config|Configuration.txt:0,24
+genom|Configuration.txt:3
+comput|Configuration.txt:4;Caching.txt:124
+store|Configuration.txt:6,15,64,67;Relational Databases.txt:22,168,184,197,349;Caching.txt:96,107,118;Rate Limiting.txt:33,36,167;Key-Value Stores.txt:8,38,72,75,99,110,138,141;Leader Election.txt:201,216,219;Storage.txt:167,183;Logging And Monitoring.txt:51;Latency And Throughput.txt:74,90;Specialized Storage Paradigms.txt:14,86,89,126,183,193,196,202,212,260,272,293,392,476,497;Replication And Sharding.txt:302,308,314
+paramet|Configuration.txt:7,85
+critic|Configuration.txt:10,87;Security And HTTPS.txt:2;Logging And Monitoring.txt:8,94
+much|Configuration.txt:12;Relational Databases.txt:339;Rate Limiting.txt:122,160;Specialized Storage Paradigms.txt:116,256,306,366
+dna|Configuration.txt:14
+gene|Configuration.txt:16,28
+characterist|Configuration.txt:19
+unlik|Configuration.txt:20;Relational Databases.txt:393;Leader Election.txt:91
+biolog|Configuration.txt:21
+counterpart|Configuration.txt:22;Security And HTTPS.txt:259,322;Specialized Storage Paradigms.txt:369
+though|Configuration.txt:23;Relational Databases.txt:72,253;Leader Election.txt:23;Storage.txt:71;Specialized Storage Paradigms.txt:70;Replication And Sharding.txt:181
+edit|Configuration.txt:27;API Design.txt:157
+therapi|Configuration.txt:29
+need|Configuration.txt:30
+format|Configuration.txt:33,51;API Design.txt:105,123;Relational Databases.txt:200;Key-Value Stores.txt:41;Logging And Monitoring.txt:32;Specialized Storage Paradigms.txt:17
+heavili|Configuration.txt:34;API Design.txt:106;Logging And Monitoring.txt:33
+configur|Configuration.txt:37,48,54,61,75,83,89;API Design.txt:109,120,126,133;Rate Limiting.txt:44;Key-Value Stores.txt:83,143;Leader Election.txt:221;Logging And Monitoring.txt:36,47;Specialized Storage Paradigms.txt:97
+javascript|Configuration.txt:39;API Design.txt:111;Logging And Monitoring.txt:38
+notat|Configuration.txt:41;API Design.txt:113;Logging And Monitoring.txt:40
+vers|Configuration.txt:43,56;API Design.txt:115,128;Logging And Monitoring.txt:42
+name|Configuration.txt:46,59;API Design.txt:118,131;Relational Databases.txt:304;Security And HTTPS.txt:453;Client—Server Model.txt:207,215,234;Logging And Monitoring.txt:45;Specialized Storage Paradigms.txt:187
+yaml|Configuration.txt:49,93;API Design.txt:121
+most|Configuration.txt:52;API Design.txt:124
+flexibl|Configuration.txt:68;Rate Limiting.txt:37;Key-Value Stores.txt:18,76;Specialized Storage Paradigms.txt:90
+nosql|Configuration.txt:69;Relational Databases.txt:227,260,266;Rate Limiting.txt:38;Key-Value Stores.txt:3,68,77;Specialized Storage Paradigms.txt:44,77,83,91
+dynam|Configuration.txt:74,107;Rate Limiting.txt:43;Key-Value Stores.txt:82;Specialized Storage Paradigms.txt:96
+dynamodb|Configuration.txt:79;Rate Limiting.txt:48;Key-Value Stores.txt:87;Specialized Storage Paradigms.txt:101
+etcd|Configuration.txt:80;Rate Limiting.txt:49;Key-Value Stores.txt:88,91,92;Leader Election.txt:193,194;Specialized Storage Paradigms.txt:102
+redi|Configuration.txt:81;Rate Limiting.txt:50,163,180;Key-Value Stores.txt:89,106,123;Specialized Storage Paradigms.txt:103
+zookeep|Configuration.txt:82;Rate Limiting.txt:51;Key-Value Stores.txt:90,130,131;Leader Election.txt:208,209;Specialized Storage Paradigms.txt:104
+constant|Configuration.txt:86
+written|Configuration.txt:91;Relational Databases.txt:86,131,188,318;Caching.txt:100;Storage.txt:85,130,187;Latency And Throughput.txt:37,94;Replication And Sharding.txt:195
+either|Configuration.txt:94;Relational Databases.txt:31,121,279;Storage.txt:30,120;Latency And Throughput.txt:27;Specialized Storage Paradigms.txt:428;Replication And Sharding.txt:140
+static|Configuration.txt:95
+hard|Configuration.txt:97;Relational Databases.txt:123;Storage.txt:122;Latency And Throughput.txt:29
+ship|Configuration.txt:99
+frontend|Configuration.txt:104
+live|Configuration.txt:109;Relational Databases.txt:45;Storage.txt:44;Replication And Sharding.txt:154
+outsid|Configuration.txt:110
+publish|Publish_Subscribe Pattern.txt:0,63,70,77,79,80
+subscrib|Publish_Subscribe Pattern.txt:1,64,71,78,93,94
+press|Publish_Subscribe Pattern.txt:2
+tug|Publish_Subscribe Pattern.txt:3
+produc|Publish_Subscribe Pattern.txt:4
+push|Publish_Subscribe Pattern.txt:6
+pull|Publish_Subscribe Pattern.txt:7
+send|Publish_Subscribe Pattern.txt:8;Security And HTTPS.txt:480,507
+receiv|Publish_Subscribe Pattern.txt:9;Load Balancers.txt:114;Replication And Sharding.txt:344
+throw|Publish_Subscribe Pattern.txt:10
+catch|Publish_Subscribe Pattern.txt:11
+thrust|Publish_Subscribe Pattern.txt:12
+retriev|Publish_Subscribe Pattern.txt:13;Caching.txt:111;Specialized Storage Paradigms.txt:184,261
+interchang|Publish_Subscribe Pattern.txt:16
+other|Publish_Subscribe Pattern.txt:20;Load Balancers.txt:117;Rate Limiting.txt:133;Replication And Sharding.txt:249,347
+cannot|Publish_Subscribe Pattern.txt:21;Relational Databases.txt:78,285;Storage.txt:77;Replication And Sharding.txt:187
+disk|Publish_Subscribe Pattern.txt:54;Relational Databases.txt:33,84,87,105,118,124,132,139;Storage.txt:32,83,86,104,117,123,131,138,194;Latency And Throughput.txt:24,30,38,45;Replication And Sharding.txt:142,193,196,214
+form|Publish_Subscribe Pattern.txt:56;Leader Election.txt:17;Storage.txt:196;Specialized Storage Paradigms.txt:337,443
+die|Publish_Subscribe Pattern.txt:62;Relational Databases.txt:70,99,190;Caching.txt:102;Leader Election.txt:153;Storage.txt:69,98,189,202;Latency And Throughput.txt:96;Replication And Sharding.txt:179,208
+pattern|Publish_Subscribe Pattern.txt:65,72
+shorten|Publish_Subscribe Pattern.txt:67
+channel|Publish_Subscribe Pattern.txt:86;Logging And Monitoring.txt:109
+even|Publish_Subscribe Pattern.txt:89;Relational Databases.txt:54,114;Security And HTTPS.txt:12,349;Leader Election.txt:190;Storage.txt:23,53,113;Replication And Sharding.txt:163,223
+come|Publish_Subscribe Pattern.txt:98,104;API Design.txt:152,261;Rate Limiting.txt:152;Client—Server Model.txt:191
+power|Publish_Subscribe Pattern.txt:105;Relational Databases.txt:89,134,203,324;Key-Value Stores.txt:44;Storage.txt:88,133;Latency And Throughput.txt:40;Specialized Storage Paradigms.txt:20;Replication And Sharding.txt:198
+least|Publish_Subscribe Pattern.txt:108,203;Caching.txt:194,201;Load Balancers.txt:87
+replay|Publish_Subscribe Pattern.txt:114
+apach|Publish_Subscribe Pattern.txt:178
+kafka|Publish_Subscribe Pattern.txt:179
+linkedin|Publish_Subscribe Pattern.txt:184
+oppos|Publish_Subscribe Pattern.txt:189;Relational Databases.txt:386;Leader Election.txt:84
+cloud|Publish_Subscribe Pattern.txt:191;Caching.txt:252;Specialized Storage Paradigms.txt:595
+scalabl|Publish_Subscribe Pattern.txt:195
+rewind|Publish_Subscribe Pattern.txt:207
+reprocess|Publish_Subscribe Pattern.txt:209
+master|API Design.txt:0;Leader Election.txt:12;Latency And Throughput.txt:17
+lesson|API Design.txt:1;Storage.txt:26
+hitherto|API Design.txt:2
+feel|API Design.txt:4
+confid|API Design.txt:5
+ace|API Design.txt:7;Security And HTTPS.txt:22
+interview|API Design.txt:10,16,264;Security And HTTPS.txt:10,23;Specialized Storage Paradigms.txt:240
+wonder|API Design.txt:11
+pass|API Design.txt:13
+sweat|API Design.txt:17,19
+bullet|API Design.txt:18
+last|API Design.txt:22;Specialized Storage Paradigms.txt:5
+puzzl|API Design.txt:24
+nee|API Design.txt:25;Hashing.txt:75;Relational Databases.txt:74;Storage.txt:73;Replication And Sharding.txt:183
+becom|API Design.txt:26;Caching.txt:130
+tru|API Design.txt:27
+expert|API Design.txt:29
+acl|API Design.txt:134,153
+permiss|API Design.txt:143
+view|API Design.txt:158;Relational Databases.txt:160,400;Leader Election.txt:98;Storage.txt:159;Latency And Throughput.txt:66
+entiti|API Design.txt:160;Security And HTTPS.txt:449;Leader Election.txt:163;Client—Server Model.txt:210,225
+pagin|API Design.txt:161,189,237
+potenti|API Design.txt:164
+warrant|API Design.txt:165
+realli|API Design.txt:166;Rate Limiting.txt:174;Key-Value Stores.txt:117;Specialized Storage Paradigms.txt:175
+relev|API Design.txt:169;Relational Databases.txt:375;Specialized Storage Paradigms.txt:152
+might|API Design.txt:171;Relational Databases.txt:398;Load Balancers.txt:101;Leader Election.txt:96;Specialized Storage Paradigms.txt:199,223;Replication And Sharding.txt:331
+return|API Design.txt:173,203;Relational Databases.txt:399;Leader Election.txt:97;Client—Server Model.txt:227
+page|API Design.txt:175,187,201
+e|API Design.txt:177;Caching.txt:136;Replication And Sharding.txt:303
+limit|API Design.txt:178;Rate Limiting.txt:8,53,55,61,64,83,92,132,186;Key-Value Stores.txt:129
+portion|API Design.txt:179
+accompani|API Design.txt:181
+identifi|API Design.txt:182;Hashing.txt:31
+token|API Design.txt:183
+next|API Design.txt:186
+desir|API Design.txt:188
+endpoint|API Design.txt:194,196
+youtub|API Design.txt:199
+trend|API Design.txt:200
+huge|API Design.txt:204
+mobil|API Design.txt:209
+devic|API Design.txt:210
+due|API Design.txt:211;Latency And Throughput.txt:6
+lower|API Design.txt:212
+spee|API Design.txt:214;Relational Databases.txt:360;Specialized Storage Paradigms.txt:137
+simpli|API Design.txt:215
+optim|API Design.txt:216;Specialized Storage Paradigms.txt:271,391;Replication And Sharding.txt:5
+ever|API Design.txt:219;Latency And Throughput.txt:0
+scrol|API Design.txt:220
+first|API Design.txt:221,229;Caching.txt:198,199
+ten|API Design.txt:222
+twenti|API Design.txt:223
+say|API Design.txt:234
+crud|API Design.txt:238,259
+updat|API Design.txt:243;Relational Databases.txt:167,176;Caching.txt:142;Storage.txt:166,175;Latency And Throughput.txt:73,82
+serv|API Design.txt:249;Caching.txt:168
+bedrock|API Design.txt:250
+therefor|API Design.txt:253;Security And HTTPS.txt:246;Latency And Throughput.txt:14;Specialized Storage Paradigms.txt:432
+find|API Design.txt:254;Specialized Storage Paradigms.txt:373,411,572
+core|API Design.txt:255;Relational Databases.txt:36;Storage.txt:35;Replication And Sharding.txt:145
+hash|Hashing.txt:0,2,10,12,23,39,43,69,71,77,102,104,110,120,125;Load Balancers.txt:107;Key-Value Stores.txt:22;Replication And Sharding.txt:319,337
+tabl|Hashing.txt:3,13,78;Relational Databases.txt:0;Key-Value Stores.txt:23
+simpl|Hashing.txt:4,16;Specialized Storage Paradigms.txt:367
+enough|Hashing.txt:5,17
+good|Hashing.txt:7,38;Replication And Sharding.txt:3
+new|Hashing.txt:8,15,95;Caching.txt:174;Leader Election.txt:150;Client—Server Model.txt:148
+yes|Hashing.txt:9;Storage.txt:5
+bad|Hashing.txt:14
+durat|Hashing.txt:19;Caching.txt:19;Latency And Throughput.txt:107;Replication And Sharding.txt:59
+thumbnail|Hashing.txt:20
+omin|Hashing.txt:21
+indic|Hashing.txt:22
+specif|Hashing.txt:27;Logging And Monitoring.txt:101;Specialized Storage Paradigms.txt:279;Replication And Sharding.txt:270
+attempt|Hashing.txt:41
+minim|Hashing.txt:42,72,88,112
+collis|Hashing.txt:44
+equival|Hashing.txt:45
+maxim|Hashing.txt:46
+uniform|Hashing.txt:47
+traffic|Hashing.txt:54,86;Load Balancers.txt:41,63,116;Rate Limiting.txt:126;Replication And Sharding.txt:346
+found|Hashing.txt:59;Caching.txt:148,155;Load Balancers.txt:46
+dns|Hashing.txt:63;Load Balancers.txt:50;Client—Server Model.txt:198,204,221
+layer|Hashing.txt:64,67;Load Balancers.txt:51,54;Security And HTTPS.txt:379,394
+way|Hashing.txt:65;Load Balancers.txt:52;Security And HTTPS.txt:214;Leader Election.txt:28
+remap|Hashing.txt:76
+resiz|Hashing.txt:80
+ad|Hashing.txt:97
+brought|Hashing.txt:100
+rendezv|Hashing.txt:101
+coin|Hashing.txt:106
+highest|Hashing.txt:107
+random|Hashing.txt:108;Relational Databases.txt:179;Caching.txt:91;Load Balancers.txt:73;Security And HTTPS.txt:484,493,513;Storage.txt:178;Latency And Throughput.txt:85
+weight|Hashing.txt:109
+goe|Hashing.txt:116;Caching.txt:169
+sha|Hashing.txt:117,122,130
+secur|Hashing.txt:119;Security And HTTPS.txt:1,24,307,353,363,367,380,382,395,396,402,471;Client—Server Model.txt:195
+cryptograph|Hashing.txt:124;Security And HTTPS.txt:292
+industri|Hashing.txt:128
+day|Hashing.txt:129;Load Balancers.txt:18
+choic|Hashing.txt:133;Caching.txt:166
+acid|Relational Databases.txt:1,267,384,429;Leader Election.txt:82;Specialized Storage Paradigms.txt:163
+drug|Relational Databases.txt:3
+lord|Relational Databases.txt:4
+desk|Relational Databases.txt:5
+rather|Relational Databases.txt:6;Specialized Storage Paradigms.txt:226
+properti|Relational Databases.txt:9,274;Specialized Storage Paradigms.txt:639
+materi|Relational Databases.txt:13;Security And HTTPS.txt:19
+cover|Relational Databases.txt:14
+hit|Relational Databases.txt:15;Caching.txt:5,145
+play|Relational Databases.txt:16
+button|Relational Databases.txt:17
+kick|Relational Databases.txt:18
+back|Relational Databases.txt:19,293
+ton|Relational Databases.txt:23
+knowledg|Relational Databases.txt:24
+biggest|Relational Databases.txt:25
+brain|Relational Databases.txt:27
+memori|Relational Databases.txt:34,59,80,177,181,185;Caching.txt:89,93,97;Rate Limiting.txt:164;Key-Value Stores.txt:107;Storage.txt:33,58,79,176,180,184;Latency And Throughput.txt:83,87,91;Replication And Sharding.txt:143,168,189
+2|Relational Databases.txt:35;Storage.txt:34;Replication And Sharding.txt:144
+record|Relational Databases.txt:38,58,64,76,96,295;Storage.txt:37,57,63,75,95;Replication And Sharding.txt:147,167,173,185,205
+queri|Relational Databases.txt:40,204,231,338,362;Key-Value Stores.txt:45;Client—Server Model.txt:222;Storage.txt:39;Specialized Storage Paradigms.txt:21,48,115,139,320,347,364,372,393,409;Replication And Sharding.txt:149
+long|Relational Databases.txt:44,169;Caching.txt:125;Storage.txt:43,168;Latency And Throughput.txt:75;Specialized Storage Paradigms.txt:454,526;Replication And Sharding.txt:153
+interact|Relational Databases.txt:46;Storage.txt:45;Replication And Sharding.txt:155
+rest|Relational Databases.txt:47;Storage.txt:46;Replication And Sharding.txt:156
+awar|Relational Databases.txt:62;Storage.txt:61;Replication And Sharding.txt:171
+fact|Relational Databases.txt:63;Storage.txt:8,62;Replication And Sharding.txt:172
+lost|Relational Databases.txt:66,186;Caching.txt:98;Storage.txt:65,185;Latency And Throughput.txt:92;Replication And Sharding.txt:175
+forev|Relational Databases.txt:67;Storage.txt:66;Replication And Sharding.txt:176
+thus|Relational Databases.txt:77;Load Balancers.txt:118;Storage.txt:76;Specialized Storage Paradigms.txt:327;Replication And Sharding.txt:186,266,348
+anyth|Relational Databases.txt:85;Storage.txt:84;Replication And Sharding.txt:194
+remain|Relational Databases.txt:88;Storage.txt:87;Specialized Storage Paradigms.txt:457;Replication And Sharding.txt:197
+loss|Relational Databases.txt:90,325;Storage.txt:89;Replication And Sharding.txt:199
+partit|Relational Databases.txt:92,106,327;Storage.txt:91,105;Replication And Sharding.txt:17,201,215,276
+perman|Relational Databases.txt:95,117;Storage.txt:94,116;Replication And Sharding.txt:204,226
+volum|Relational Databases.txt:107,111;Storage.txt:106,110;Replication And Sharding.txt:216,220
+recov|Relational Databases.txt:113;Storage.txt:112;Replication And Sharding.txt:222
+go|Relational Databases.txt:116;Storage.txt:115;Logging And Monitoring.txt:20,25;Replication And Sharding.txt:225
+hdd|Relational Databases.txt:122,148,154,161;Caching.txt:55;Storage.txt:121,147,153,160;Latency And Throughput.txt:28,54,60,67,143;Replication And Sharding.txt:95
+drive|Relational Databases.txt:125,129;Storage.txt:124,128;Latency And Throughput.txt:31,35
+ssd|Relational Databases.txt:126,145,153,171;Caching.txt:38;Storage.txt:125,144,152,170;Latency And Throughput.txt:32,51,59,77,126;Replication And Sharding.txt:78
+solid|Relational Databases.txt:127;Storage.txt:126;Latency And Throughput.txt:33
+state|Relational Databases.txt:128,282,289,408;Leader Election.txt:106;Storage.txt:127;Latency And Throughput.txt:34
+failur|Relational Databases.txt:135;Caching.txt:163;Storage.txt:134;Latency And Throughput.txt:41;Replication And Sharding.txt:257
+crash|Relational Databases.txt:138,323;Storage.txt:137;Latency And Throughput.txt:44
+non|Relational Databases.txt:142,207,222,319;Key-Value Stores.txt:48,63;Storage.txt:141;Latency And Throughput.txt:48;Specialized Storage Paradigms.txt:24,39
+volatil|Relational Databases.txt:143,320;Storage.txt:142;Latency And Throughput.txt:49
+far|Relational Databases.txt:146,156;Caching.txt:236;Rate Limiting.txt:134;Storage.txt:145,155;Latency And Throughput.txt:52,62
+faster|Relational Databases.txt:147,340;Peer-To-Peer Networks.txt:64;Caching.txt:113;Security And HTTPS.txt:257;Storage.txt:146;Latency And Throughput.txt:53;Specialized Storage Paradigms.txt:117
+latenc|Relational Databases.txt:150;Caching.txt:9,231,238;Storage.txt:149;Latency And Throughput.txt:9,56,97;Replication And Sharding.txt:49,268
+expens|Relational Databases.txt:157;Storage.txt:156;Latency And Throughput.txt:63
+financi|Relational Databases.txt:158;Storage.txt:157;Latency And Throughput.txt:64
+rare|Relational Databases.txt:165;Storage.txt:164;Latency And Throughput.txt:71
+frequent|Relational Databases.txt:174;Caching.txt:202;Storage.txt:173;Latency And Throughput.txt:80
+ram|Relational Databases.txt:182;Caching.txt:29,94;Storage.txt:181;Latency And Throughput.txt:88,117;Replication And Sharding.txt:69
+tabular|Relational Databases.txt:199,219;Key-Value Stores.txt:40,60;Specialized Storage Paradigms.txt:16,36
+sql|Relational Databases.txt:206,213,229,238,242,246,259,263,425;Key-Value Stores.txt:47,54;Specialized Storage Paradigms.txt:23,30,46,55,59,63,76,80,159,361,368
+contrast|Relational Databases.txt:210;Key-Value Stores.txt:51;Specialized Storage Paradigms.txt:27
+fre|Relational Databases.txt:217;Key-Value Stores.txt:58;Specialized Storage Paradigms.txt:34
+impos|Relational Databases.txt:218;Key-Value Stores.txt:59;Specialized Storage Paradigms.txt:35
+languag|Relational Databases.txt:232;Specialized Storage Paradigms.txt:49,348
+deriv|Relational Databases.txt:237;Specialized Storage Paradigms.txt:54
+postgresql|Relational Databases.txt:239,427;Specialized Storage Paradigms.txt:56,161
+postgr|Relational Databases.txt:241,420;Specialized Storage Paradigms.txt:58,154
+synonym|Relational Databases.txt:250;Specialized Storage Paradigms.txt:67
+practic|Relational Databases.txt:254,352;Specialized Storage Paradigms.txt:71,129
+everi|Relational Databases.txt:255;Specialized Storage Paradigms.txt:72
+compat|Relational Databases.txt:264;Specialized Storage Paradigms.txt:81
+transact|Relational Databases.txt:268,271,278,284,290,299,302,310,317,385,430;Leader Election.txt:83;Specialized Storage Paradigms.txt:164
+atom|Relational Databases.txt:275
+succe|Relational Databases.txt:280
+fail|Relational Databases.txt:281
+bring|Relational Databases.txt:286;Rate Limiting.txt:115
+invalid|Relational Databases.txt:288
+commit|Relational Databases.txt:291,316
+roll|Relational Databases.txt:292
+rule|Relational Databases.txt:294
+still|Relational Databases.txt:296
+appli|Relational Databases.txt:297
+futur|Relational Databases.txt:298
+strong|Relational Databases.txt:305,377,379,394;Key-Value Stores.txt:93,132;Leader Election.txt:75,77,92,195,210
+isol|Relational Databases.txt:307
+execut|Relational Databases.txt:308,313
+concurr|Relational Databases.txt:311
+sequenti|Relational Databases.txt:314
+durabl|Relational Databases.txt:315
+undon|Relational Databases.txt:322
+index|Relational Databases.txt:329,341,354,376;Specialized Storage Paradigms.txt:106,118,131,153,275,403,421
+auxiliari|Relational Databases.txt:331;Specialized Storage Paradigms.txt:108
+column|Relational Databases.txt:357;Specialized Storage Paradigms.txt:134;Replication And Sharding.txt:320
+great|Relational Databases.txt:359;Specialized Storage Paradigms.txt:136
+downsid|Relational Databases.txt:365;Specialized Storage Paradigms.txt:142
+longer|Relational Databases.txt:367;Specialized Storage Paradigms.txt:144
+place|Relational Databases.txt:374;Logging And Monitoring.txt:10;Specialized Storage Paradigms.txt:151
+eventu|Relational Databases.txt:387,389,403,410;Leader Election.txt:85,87,101,108
+datastor|Relational Databases.txt:405;Leader Election.txt:103
+give|Relational Databases.txt:406;Leader Election.txt:104
+reflect|Relational Databases.txt:411;Leader Election.txt:109
+period|Relational Databases.txt:415;Leader Election.txt:113
+10|Relational Databases.txt:417;Caching.txt:48,51;Rate Limiting.txt:98,100;Leader Election.txt:115;Latency And Throughput.txt:136,139;Replication And Sharding.txt:88,91
+second|Relational Databases.txt:418;Peer-To-Peer Networks.txt:49;Caching.txt:22,86;Rate Limiting.txt:95,99;Leader Election.txt:116;Latency And Throughput.txt:110,174;Replication And Sharding.txt:62,126
+dialect|Relational Databases.txt:424;Specialized Storage Paradigms.txt:158
+equal|Peer-To-Peer Networks.txt:0
+share|Peer-To-Peer Networks.txt:1;Security And HTTPS.txt:248
+uniti|Peer-To-Peer Networks.txt:3
+strength|Peer-To-Peer Networks.txt:5
+merri|Peer-To-Peer Networks.txt:6
+teamwork|Peer-To-Peer Networks.txt:7
+dream|Peer-To-Peer Networks.txt:9
+work|Peer-To-Peer Networks.txt:10;Client—Server Model.txt:21
+welcom|Peer-To-Peer Networks.txt:11
+peer|Peer-To-Peer Networks.txt:12,13,52,53,58,68,69
+throughput|Peer-To-Peer Networks.txt:33,43;Caching.txt:70,80;Latency And Throughput.txt:11,158,168;Replication And Sharding.txt:24,110,120,288
+proper|Peer-To-Peer Networks.txt:38;Caching.txt:75;Logging And Monitoring.txt:1;Latency And Throughput.txt:163;Replication And Sharding.txt:115
+rps|Peer-To-Peer Networks.txt:50;Caching.txt:87;Latency And Throughput.txt:175;Replication And Sharding.txt:127
+qps|Peer-To-Peer Networks.txt:51;Caching.txt:88;Latency And Throughput.txt:176;Replication And Sharding.txt:128
+divid|Peer-To-Peer Networks.txt:59;Specialized Storage Paradigms.txt:520
+workload|Peer-To-Peer Networks.txt:60,63;Load Balancers.txt:96,100,110;Replication And Sharding.txt:326,330,340
+presum|Peer-To-Peer Networks.txt:61
+otherwis|Peer-To-Peer Networks.txt:66;Caching.txt:114
+possibl|Peer-To-Peer Networks.txt:67
+gossip|Peer-To-Peer Networks.txt:76
+talk|Peer-To-Peer Networks.txt:80;Client—Server Model.txt:2,6,16
+uncoordin|Peer-To-Peer Networks.txt:81
+cluster|Peer-To-Peer Networks.txt:83;Leader Election.txt:122,143
+spread|Peer-To-Peer Networks.txt:84;Load Balancers.txt:102;Replication And Sharding.txt:332
+requir|Peer-To-Peer Networks.txt:88;Security And HTTPS.txt:370;Client—Server Model.txt:188
+punch|Caching.txt:0
+bag|Caching.txt:1
+ง|Caching.txt:6,8
+ل|Caching.txt:7
+millisecond|Caching.txt:21;Latency And Throughput.txt:109;Replication And Sharding.txt:61
+magnitud|Caching.txt:25;Latency And Throughput.txt:113;Replication And Sharding.txt:65
+mb|Caching.txt:28,37,46;Latency And Throughput.txt:116,125,134;Replication And Sharding.txt:68,77,86
+250|Caching.txt:30;Latency And Throughput.txt:118;Replication And Sharding.txt:70
+μs|Caching.txt:31,41,50,58,67;Latency And Throughput.txt:119,129,138,146,155;Replication And Sharding.txt:71,81,90,98,107
+25|Caching.txt:33;Latency And Throughput.txt:121;Replication And Sharding.txt:73
+ms|Caching.txt:34,43,52,60,69;Latency And Throughput.txt:122,131,140,148,157;Replication And Sharding.txt:74,83,92,100,109
+000|Caching.txt:40,49,57,66;Latency And Throughput.txt:128,137,145,154;Replication And Sharding.txt:80,89,97,106
+1mb|Caching.txt:54;Latency And Throughput.txt:142;Replication And Sharding.txt:94
+20|Caching.txt:56,59;Latency And Throughput.txt:144,147;Replication And Sharding.txt:96,99
+inter|Caching.txt:61;Latency And Throughput.txt:149;Replication And Sharding.txt:101
+continent|Caching.txt:62;Latency And Throughput.txt:150;Replication And Sharding.txt:102
+round|Caching.txt:63;Load Balancers.txt:71;Latency And Throughput.txt:151;Replication And Sharding.txt:103
+trip|Caching.txt:64;Latency And Throughput.txt:152;Replication And Sharding.txt:104
+150|Caching.txt:65,68;Latency And Throughput.txt:153,156;Replication And Sharding.txt:105,108
+hardwar|Caching.txt:105
+meant|Caching.txt:110
+truth|Caching.txt:134
+behind|Caching.txt:139
+miss|Caching.txt:151,178
+negat|Caching.txt:160
+consequ|Caching.txt:161
+poor|Caching.txt:164
+evict|Caching.txt:180,185,190
+polici|Caching.txt:181,182,191
+remov|Caching.txt:186
+lru|Caching.txt:193
+recent|Caching.txt:195
+fifo|Caching.txt:197
+lfu|Caching.txt:200
+cdn|Caching.txt:207,226,232,240,253
+third|Caching.txt:208
+parti|Caching.txt:209;Security And HTTPS.txt:207,242,249
+web|Caching.txt:216;Specialized Storage Paradigms.txt:611
+slow|Caching.txt:218
+region|Caching.txt:221,225;Rate Limiting.txt:79;Specialized Storage Paradigms.txt:414,495,524,527,542;Replication And Sharding.txt:256,297
+around|Caching.txt:228
+better|Caching.txt:237
+pop|Caching.txt:244
+presenc|Caching.txt:246
+cdns|Caching.txt:249
+cloudflar|Caching.txt:250
+relentless|Load Balancers.txt:0
+digit|Load Balancers.txt:7;Security And HTTPS.txt:412,451
+traff|Load Balancers.txt:8,89;Rate Limiting.txt:148
+cop|Load Balancers.txt:9
+watch|Load Balancers.txt:11;Replication And Sharding.txt:7
+guardian|Load Balancers.txt:12
+ensur|Load Balancers.txt:14
+peak|Load Balancers.txt:16
+night|Load Balancers.txt:19
+select|Load Balancers.txt:56,74,77
+strategi|Load Balancers.txt:57,69;Replication And Sharding.txt:292
+choos|Load Balancers.txt:60,78;Leader Election.txt:11
+robin|Load Balancers.txt:72
+base|Load Balancers.txt:76,91;Key-Value Stores.txt:9;Specialized Storage Paradigms.txt:186;Replication And Sharding.txt:295,299,318
+best|Load Balancers.txt:80;Rate Limiting.txt:176;Key-Value Stores.txt:119
+metric|Load Balancers.txt:82;Logging And Monitoring.txt:76
+fastest|Load Balancers.txt:84
+amount|Load Balancers.txt:88
+hot|Load Balancers.txt:93,120;Replication And Sharding.txt:323,350
+spot|Load Balancers.txt:94,121;Replication And Sharding.txt:324,351
+uneven|Load Balancers.txt:103;Replication And Sharding.txt:333
+suboptim|Load Balancers.txt:109;Replication And Sharding.txt:339
+natur|Load Balancers.txt:111;Specialized Storage Paradigms.txt:336;Replication And Sharding.txt:341
+skew|Load Balancers.txt:112;Replication And Sharding.txt:342
+poke|Rate Limiting.txt:0,1,2,5
+po|Rate Limiting.txt:3
+got|Rate Limiting.txt:6
+rate|Rate Limiting.txt:7,52,60,82,131,185;Key-Value Stores.txt:128
+prevent|Rate Limiting.txt:69,130
+dos|Rate Limiting.txt:70,103,109,127,146
+attack|Rate Limiting.txt:71,104,108,110,111,128,138,143,145,147;Security And HTTPS.txt:197,198,199,220,222,445
+enforc|Rate Limiting.txt:72
+account|Rate Limiting.txt:77
+tier|Rate Limiting.txt:86
+denial|Rate Limiting.txt:106,141
+malici|Rate Limiting.txt:112;Security And HTTPS.txt:208
+damag|Rate Limiting.txt:116
+render|Rate Limiting.txt:119
+flood|Rate Limiting.txt:125,149
+defend|Rate Limiting.txt:136,162;Security And HTTPS.txt:228
+ddos|Rate Limiting.txt:137,144
+target|Rate Limiting.txt:150
+thousand|Rate Limiting.txt:157
+harder|Rate Limiting.txt:161
+offer|Rate Limiting.txt:168;Key-Value Stores.txt:111;Security And HTTPS.txt:29
+fast|Rate Limiting.txt:175;Key-Value Stores.txt:17,118;Specialized Storage Paradigms.txt:324,578
+solut|Rate Limiting.txt:179;Key-Value Stores.txt:122;Logging And Monitoring.txt:70
+today|Key-Value Stores.txt:5
+associ|Key-Value Stores.txt:12
+array|Key-Value Stores.txt:13
+resembl|Key-Value Stores.txt:21
+folk|Key-Value Stores.txt:25
+favorit|Key-Value Stores.txt:26
+friend|Key-Value Stores.txt:27
+neighborhood|Key-Value Stores.txt:28
+strike|Key-Value Stores.txt:31
+leader|Key-Value Stores.txt:103,145;Leader Election.txt:21,118,139,146,169,205,223
+elect|Key-Value Stores.txt:104,146;Leader Election.txt:3,22,119,127,140,149,206,224
+beyond|Security And HTTPS.txt:6
+scope|Security And HTTPS.txt:7
+said|Security And HTTPS.txt:11;Logging And Monitoring.txt:18
+cursori|Security And HTTPS.txt:13
+edg|Security And HTTPS.txt:20;Specialized Storage Paradigms.txt:310
+pun|Security And HTTPS.txt:25
+perhap|Security And HTTPS.txt:26
+intend|Security And HTTPS.txt:27
+man|Security And HTTPS.txt:195,218,443
+middl|Security And HTTPS.txt:196,219,444
+intercept|Security And HTTPS.txt:200,210
+line|Security And HTTPS.txt:201
+thought|Security And HTTPS.txt:203
+actor|Security And HTTPS.txt:209
+mutat|Security And HTTPS.txt:211
+mitm|Security And HTTPS.txt:221
+primari|Security And HTTPS.txt:223;Leader Election.txt:132
+threat|Security And HTTPS.txt:224
+encrypt|Security And HTTPS.txt:225,230,232,236,267,271,276,278,286,297,310,326,331,348,355,387,467,516,532,536
+https|Security And HTTPS.txt:226,359,409,427,457,465;Client—Server Model.txt:203
+aim|Security And HTTPS.txt:227
+symmetr|Security And HTTPS.txt:229,253,262,321,334,531
+reli|Security And HTTPS.txt:233,279,456;Specialized Storage Paradigms.txt:401
+decrypt|Security And HTTPS.txt:237,287,300,537
+must|Security And HTTPS.txt:240,245,305
+known|Security And HTTPS.txt:241,273,408;Leader Election.txt:20;Client—Server Model.txt:175,224
+involv|Security And HTTPS.txt:243;Client—Server Model.txt:212
+asymmetr|Security And HTTPS.txt:258,270,277,316
+wide|Security And HTTPS.txt:260,329;Specialized Storage Paradigms.txt:167
+advanc|Security And HTTPS.txt:266,325
+standard|Security And HTTPS.txt:268,327,332,347;Specialized Storage Paradigms.txt:355
+ae|Security And HTTPS.txt:269,323,328,337,339,341,344
+mathemat|Security And HTTPS.txt:294
+kept|Security And HTTPS.txt:306
+maintain|Security And HTTPS.txt:308
+fidel|Security And HTTPS.txt:309
+shar|Security And HTTPS.txt:315
+slower|Security And HTTPS.txt:320;Specialized Storage Paradigms.txt:200
+128|Security And HTTPS.txt:338
+256|Security And HTTPS.txt:342
+consid|Security And HTTPS.txt:345
+gold|Security And HTTPS.txt:346
+u|Security And HTTPS.txt:351
+nation|Security And HTTPS.txt:352
+agenc|Security And HTTPS.txt:354
+secret|Security And HTTPS.txt:357,509,529
+extens|Security And HTTPS.txt:364
+onlin|Security And HTTPS.txt:369,404
+trust|Security And HTTPS.txt:372,448
+certif|Security And HTTPS.txt:373,376,411,413,416,430,440,446,452,455,497,503,505
+ssl|Security And HTTPS.txt:375,410,429,439,454,496
+transport|Security And HTTPS.txt:378,393
+tls|Security And HTTPS.txt:381,392,406,424,459,475
+grant|Security And HTTPS.txt:414
+author|Security And HTTPS.txt:417,447,506
+handshak|Security And HTTPS.txt:425,460,476
+confirm|Security And HTTPS.txt:432
+belong|Security And HTTPS.txt:435,438
+claim|Security And HTTPS.txt:437
+crucial|Security And HTTPS.txt:441
+defens|Security And HTTPS.txt:442
+sign|Security And HTTPS.txt:450
+exchang|Security And HTTPS.txt:466
+establish|Security And HTTPS.txt:470
+rough|Security And HTTPS.txt:477
+hello|Security And HTTPS.txt:482,490,525,527
+verifi|Security And HTTPS.txt:502
+issu|Security And HTTPS.txt:504;Logging And Monitoring.txt:4,96
+premast|Security And HTTPS.txt:508,528
+yet|Security And HTTPS.txt:510
+remaind|Security And HTTPS.txt:540
+citizen|Leader Election.txt:0
+societi|Leader Election.txt:1
+lead|Leader Election.txt:4,129,151,152
+vote|Leader Election.txt:5
+prefer|Leader Election.txt:6;Specialized Storage Paradigms.txt:329
+candid|Leader Election.txt:7
+via|Leader Election.txt:14
+democraci|Leader Election.txt:19
+person|Leader Election.txt:24
+algorithmocraci|Leader Election.txt:26
+sound|Leader Election.txt:27
+cooler|Leader Election.txt:29
+correct|Leader Election.txt:137,185
+whatev|Leader Election.txt:154
+reason|Leader Election.txt:155
+consensus|Leader Election.txt:156,175,182
+agre|Leader Election.txt:164
+group|Leader Election.txt:171
+paxo|Leader Election.txt:177,179
+raft|Leader Election.txt:178,180
+synchron|Leader Election.txt:187
+bunch|Client—Server Model.txt:13
+collid|Client—Server Model.txt:153
+pick|Client—Server Model.txt:154
+65|Client—Server Model.txt:160
+535|Client—Server Model.txt:161
+216|Client—Server Model.txt:162
+total|Client—Server Model.txt:164;Specialized Storage Paradigms.txt:585
+1023|Client—Server Model.txt:168
+reserv|Client—Server Model.txt:169
+pre|Client—Server Model.txt:183
+although|Client—Server Model.txt:186
+memor|Client—Server Model.txt:189
+handi|Client—Server Model.txt:192
+22|Client—Server Model.txt:194
+shell|Client—Server Model.txt:196
+53|Client—Server Model.txt:197
+lookup|Client—Server Model.txt:199
+domain|Client—Server Model.txt:206,214,233
+translat|Client—Server Model.txt:213
+entir|Storage.txt:0;Specialized Storage Paradigms.txt:510,514
+dedic|Storage.txt:2
+discuss|Storage.txt:11
+turn|Storage.txt:13
+incred|Storage.txt:16
+vital|Storage.txt:19
+skip|Storage.txt:25
+diagnos|Logging And Monitoring.txt:3
+crop|Logging And Monitoring.txt:5
+mechan|Logging And Monitoring.txt:9
+audit|Logging And Monitoring.txt:12
+trail|Logging And Monitoring.txt:13
+event|Logging And Monitoring.txt:15,55,82
+occur|Logging And Monitoring.txt:16,97;Specialized Storage Paradigms.txt:280
+ahead|Logging And Monitoring.txt:21
+unleash|Logging And Monitoring.txt:22
+inner|Logging And Monitoring.txt:23
+orwel|Logging And Monitoring.txt:24
+full|Logging And Monitoring.txt:26
+broth|Logging And Monitoring.txt:28
+stdout|Logging And Monitoring.txt:62
+stderr|Logging And Monitoring.txt:63
+pipe|Logging And Monitoring.txt:64
+automat|Logging And Monitoring.txt:65
+aggreg|Logging And Monitoring.txt:67,84
+monitor|Logging And Monitoring.txt:71,77,103;Specialized Storage Paradigms.txt:630
+visibl|Logging And Monitoring.txt:73
+human|Logging And Monitoring.txt:85
+readabl|Logging And Monitoring.txt:86
+chart|Logging And Monitoring.txt:87,104
+alert|Logging And Monitoring.txt:88,98,106
+notifi|Logging And Monitoring.txt:93
+threshold|Logging And Monitoring.txt:102
+past|Logging And Monitoring.txt:105
+slack|Logging And Monitoring.txt:111
+experienc|Latency And Throughput.txt:1
+lag|Latency And Throughput.txt:2,12
+game|Latency And Throughput.txt:4
+combin|Latency And Throughput.txt:7
+suck|Latency And Throughput.txt:13
+duti|Latency And Throughput.txt:16
+join|Latency And Throughput.txt:20
+crusad|Latency And Throughput.txt:21
+ping|Latency And Throughput.txt:23
+yup|Specialized Storage Paradigms.txt:0
+nope|Specialized Storage Paradigms.txt:4
+blob|Specialized Storage Paradigms.txt:165,188,195,224,246,262,598,605
+small|Specialized Storage Paradigms.txt:171
+se|Specialized Storage Paradigms.txt:179
+partial|Specialized Storage Paradigms.txt:180
+sort|Specialized Storage Paradigms.txt:189
+kv|Specialized Storage Paradigms.txt:201
+megabyt|Specialized Storage Paradigms.txt:204
+gigabyt|Specialized Storage Paradigms.txt:207
+peopl|Specialized Storage Paradigms.txt:210
+binari|Specialized Storage Paradigms.txt:216
+snapshot|Specialized Storage Paradigms.txt:218
+imag|Specialized Storage Paradigms.txt:219
+stat|Specialized Storage Paradigms.txt:220
+asset|Specialized Storage Paradigms.txt:221
+websit|Specialized Storage Paradigms.txt:222
+complic|Specialized Storage Paradigms.txt:227
+premis|Specialized Storage Paradigms.txt:228
+giant|Specialized Storage Paradigms.txt:229
+compani|Specialized Storage Paradigms.txt:230
+amazon|Specialized Storage Paradigms.txt:233,251,609,610
+infrastructur|Specialized Storage Paradigms.txt:234
+gcs|Specialized Storage Paradigms.txt:244,597
+s3|Specialized Storage Paradigms.txt:245,603,604
+respect|Specialized Storage Paradigms.txt:252
+cost|Specialized Storage Paradigms.txt:253
+money|Specialized Storage Paradigms.txt:254
+seri|Specialized Storage Paradigms.txt:265,619,626
+tsdb|Specialized Storage Paradigms.txt:267
+analyz|Specialized Storage Paradigms.txt:273
+moment|Specialized Storage Paradigms.txt:282
+tsdbs|Specialized Storage Paradigms.txt:285
+influxdb|Specialized Storage Paradigms.txt:286,614
+prometheus|Specialized Storage Paradigms.txt:287,621
+graphit|Specialized Storage Paradigms.txt:288
+graph|Specialized Storage Paradigms.txt:289,296,301,309,311,316,325,338,346,352,357,362,377,634
+entri|Specialized Storage Paradigms.txt:300,467
+explicit|Specialized Storage Paradigms.txt:303
+advantag|Specialized Storage Paradigms.txt:314
+under|Specialized Storage Paradigms.txt:315
+deepli|Specialized Storage Paradigms.txt:321
+soci|Specialized Storage Paradigms.txt:343
+cypher|Specialized Storage Paradigms.txt:345,363
+origin|Specialized Storage Paradigms.txt:349
+neo4j|Specialized Storage Paradigms.txt:351,375,632
+cyph|Specialized Storage Paradigms.txt:371
+match|Specialized Storage Paradigms.txt:379
+some_nod|Specialized Storage Paradigms.txt:380
+somelabel|Specialized Storage Paradigms.txt:381,384
+some_relationship|Specialized Storage Paradigms.txt:382
+some_other_nod|Specialized Storage Paradigms.txt:383
+some_properti|Specialized Storage Paradigms.txt:385
+spati|Specialized Storage Paradigms.txt:387,399,402,424,444
+spatial|Specialized Storage Paradigms.txt:394,408,477,494
+quadtre|Specialized Storage Paradigms.txt:405,415,427,440,473,488,501,537,576,589
+vicin|Specialized Storage Paradigms.txt:413
+tree|Specialized Storage Paradigms.txt:416
+dimension|Specialized Storage Paradigms.txt:423
+zero|Specialized Storage Paradigms.txt:429
+children|Specialized Storage Paradigms.txt:430,437,464,471,540,592
+leaf|Specialized Storage Paradigms.txt:433,458,548
+exact|Specialized Storage Paradigms.txt:435
+maximum|Specialized Storage Paradigms.txt:449,502
+capac|Specialized Storage Paradigms.txt:450,456,461,504
+specifi|Specialized Storage Paradigms.txt:451
+reach|Specialized Storage Paradigms.txt:460
+lend|Specialized Storage Paradigms.txt:474
+repres|Specialized Storage Paradigms.txt:479,490,493,509,523,555,565
+grid|Specialized Storage Paradigms.txt:480,551,562
+fill|Specialized Storage Paradigms.txt:481
+rectangl|Specialized Storage Paradigms.txt:482,487,491,492,513,519,531,547,554,564
+recurs|Specialized Storage Paradigms.txt:483
+subdivid|Specialized Storage Paradigms.txt:484,532,553,563
+imagin|Specialized Storage Paradigms.txt:500
+root|Specialized Storage Paradigms.txt:507
+outermost|Specialized Storage Paradigms.txt:512,518
+quadrant|Specialized Storage Paradigms.txt:522,534
+correspond|Specialized Storage Paradigms.txt:530,535
+fewer|Specialized Storage Paradigms.txt:543
+undivid|Specialized Storage Paradigms.txt:546
+dens|Specialized Storage Paradigms.txt:556
+popul|Specialized Storage Paradigms.txt:557,567
+area|Specialized Storage Paradigms.txt:558,568,571
+citi|Specialized Storage Paradigms.txt:560
+spars|Specialized Storage Paradigms.txt:566
+rural|Specialized Storage Paradigms.txt:570
+perfect|Specialized Storage Paradigms.txt:575
+log4|Specialized Storage Paradigms.txt:581
+numb|Specialized Storage Paradigms.txt:586
+aw|Specialized Storage Paradigms.txt:613
+purpos|Specialized Storage Paradigms.txt:631
+label|Specialized Storage Paradigms.txt:640
+latter|Replication And Sharding.txt:6
+former|Replication And Sharding.txt:8
+improv|Replication And Sharding.txt:9
+tandem|Replication And Sharding.txt:10
+examin|Replication And Sharding.txt:13
+techniqu|Replication And Sharding.txt:18
+enhanc|Replication And Sharding.txt:20
+duplic|Replication And Sharding.txt:244
+move|Replication And Sharding.txt:262
+closer|Replication And Sharding.txt:264
+decreas|Replication And Sharding.txt:267
+done|Replication And Sharding.txt:286
+g|Replication And Sharding.txt:304
+payment|Replication And Sharding.txt:311

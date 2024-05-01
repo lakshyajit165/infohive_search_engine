@@ -144,9 +144,16 @@ def rank_documents(terms, docs):
             if term not in postings_index:
                 pass
             list_of_docs_for_term = postings_index[term]
-            term_freq_for_doc = len([element for element in list_of_docs_for_term if element[0] == doc])
+            # print("list of docs for term", doc, term, list_of_docs_for_term)
+            # term_freq_for_doc = len([element for element in list_of_docs_for_term if element[0] == doc])
+            term_freq_for_doc = 0
+            for doc_and_freq in list_of_docs_for_term:
+                if doc_and_freq[0] == doc:
+                    term_freq_for_doc = len(doc_and_freq[1])
+                    break;
+
             TF = term_freq_for_doc / total_terms
-            print("TF", term_freq_for_doc, total_terms)
+            # print("Doc, term, TF and total_terms", doc, term, term_freq_for_doc, total_terms)
             normalized_term_freq.append(TF)
             # now calculate the inverse doc frequency for this term
             term_freq_in_corpus = len(postings_index[term])
@@ -156,18 +163,19 @@ def rank_documents(terms, docs):
                 IDF = 1 # because log 1 will be 0
             else:
                 IDF = math.log(total_docs_in_corpus / term_freq_in_corpus)
-            print("IDF", total_docs_in_corpus, term_freq_in_corpus)
+            # print("Doc, term, IDF", doc, term, IDF)
             inverse_doc_freq.append(IDF)
         rank_meta_data["TF"] = normalized_term_freq
         rank_meta_data["IDF"] = inverse_doc_freq
         doc_rank_map[doc] = rank_meta_data
-    print("rank map: ", doc_rank_map)
+    # print("rank map: ", doc_rank_map)
     for doc, tf_idf in doc_rank_map.items():
         score = 0
         for i in range(len(tf_idf['TF'])):
             score += tf_idf['TF'][i] * tf_idf['IDF'][i]
         document_scores[doc] = score
 
+    # print("scores: ", document_scores)
     # Sort documents based on combined scores in descending order
     sorted_documents = [{"document": doc, "score": score} for doc, score in sorted(document_scores.items(), key=lambda x: x[1], reverse=True)]
     return sorted_documents
@@ -185,6 +193,7 @@ elif query_type == "PQ":
 else:
     print("unknown query type")
 
+''' now we have the "docs" list i.e the list of documents in which our input terms appear. We can run the "rank_documents" method and 
+'''
 # now that we have the doc list, we need to rank the docs based on TF-IDF
-# print("result", docs)
 print(rank_documents(terms, docs))

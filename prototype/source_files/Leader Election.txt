@@ -1,0 +1,35 @@
+Citizens in a society typically elect a leader by voting for their preferred candidate. But how do servers in a distributed system choose a master node? Via algorithms of course!
+
+This form of algorithmic democracy is known as "leader election", though we personally think "algorithmocracy" sounds way cooler.
+
+
+Availability : 
+The odds of a particular server or service being up and running at any point in time, usually measured in percentages. A server that has 99% availability will be operational 99% of the time (this would be described as having two nines of availability).
+
+High Availability : 
+Used to describe systems that have particularly high levels of availability, typically 5 nines or more; sometimes abbreviated "HA".
+
+Redundancy : 
+The process of replicating parts of a system in an effort to make it more reliable.
+
+Strong Consistency : 
+Strong Consistency usually refers to the consistency of ACID transactions, as opposed to Eventual Consistency.
+
+Eventual Consistency : 
+A consistency model which is unlike Strong Consistency. In this model, reads might return a view of the system that is stale. An eventually consistent datastore will give guarantees that the state of the database will eventually reflect writes within a time period (could be 10 seconds, or minutes).
+
+Leader Election : 
+The process by which nodes in a cluster (for instance, servers in a set of servers) elect a so-called "leader" amongst them, responsible for the primary operations of the service that these nodes support. When correctly implemented, leader election guarantees that all nodes in the cluster know which one is the leader at any given time and can elect a new leader if the leader dies for whatever reason.
+
+Consensus Algorithm : 
+A type of complex algorithms used to have multiple entities agree on a single data value, like who the "leader" is amongst a group of machines. Two popular consensus algorithms are Paxos and Raft.
+
+Paxos & Raft : 
+Two consensus algorithms that, when implemented correctly, allow for the synchronization of certain operations, even in a distributed setting.
+
+Etcd : 
+Etcd is a strongly consistent and highly available key-value store that's often used to implement leader election in a system.
+
+ZooKeeper : 
+ZooKeeper is a strongly consistent, highly available key-value store. It's often used to store important configuration or to perform leader election.
+

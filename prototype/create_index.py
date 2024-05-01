@@ -1,5 +1,6 @@
 import os
 import json
+import math
 from porter2stemmer import Porter2Stemmer
 
 from nltk.tokenize import RegexpTokenizer
@@ -28,10 +29,32 @@ postings_index = {}
 index_file = "index.txt"
 
 def update_total_terms_per_file(filename, terms_list):
-    ''' In this implementation we are maintaining a json structure of filename and total terms per file. So if the file total_terms_per_file.txt is empty, we write an empty object to the file first'''
+    ''' 
+    Note:
+    1. First we contruct a vector space for the document -> this is basically a frequency list of the unique terms in the document. We nned to calculate and store || D || (magnitude) for each of these documents. This can be calculated  as the square root of the sum of the squares of its components. 
+
+    2. In this implementation we are maintaining a json structure of filename and total terms per file. So if the file total_terms_per_file.txt is empty, we write an empty object to the file first'''
+
     path = "total_terms_per_file.txt"
     try:
-        # Initialize the dictionary to hold filename and term frequency
+        # first create a hashmap to store the unique term frequency as a list
+        unique_term_freq = {}
+        for term in terms_list:
+            if term in unique_term_freq:
+                unique_term_freq[term] += 1
+            else:
+                unique_term_freq[term] = 1
+        
+        '''
+        We can use a vector to represent the document in bag of words model, since the ordering of terms is not important. There is an entry for each unique term in the document with the value being its term frequency. For the sake of an example, consider the document “computer study computer science”. The vector representation of this document will be of size 3 with values [2, 1, 1] corresponding to computer, study, and science respectively. We can indeed represent every document in the corpus as a k-dimensonal vector, where k is the number of unique terms in that document. Each dimension corresponds to a separate term in the document. 
+        '''
+        # now calculate the vector magnitude
+        sum_of_squares = 0
+        doc_vector = list(unique_term_freq.values())
+        for vector_ele in doc_vector:
+            sum_of_squares += (vector_ele * vector_ele)
+
+        # Initialize the dictionary to hold filename and vector magnitude
         data = {}
 
         # Check if the file exists
@@ -45,8 +68,8 @@ def update_total_terms_per_file(filename, terms_list):
                 with open(path, 'w') as file:
                     json.dump(data, file)
 
-        # Update the dictionary with the new or updated term frequency
-        data[filename] = len(terms_list)
+        # Update the dictionary with the vector magnitude
+        data[filename] = math.sqrt(sum_of_squares)
 
         # Write the updated dictionary back to the file
         with open(path, 'w') as file:
@@ -106,7 +129,6 @@ for filename in os.listdir(source_folder):
             filtered_tokens_list = [word for word in tokens_list if word not in stopwords.words('english')]
             # stem the filtered token list
             stemmed_list = [stemmer.stem(word) for word in filtered_tokens_list]
-            print(filename, stemmed_list)
             update_total_terms_per_file(filename, stemmed_list)
             postings_index_map = create_postings_map_per_file(filename, stemmed_list)
             create_postings_index(postings_index_map)
