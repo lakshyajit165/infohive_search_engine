@@ -28,14 +28,14 @@ stemmer = Porter2Stemmer()
 postings_index = {}
 index_file = "index.txt"
 
-def update_total_terms_per_file(filename, terms_list):
+def update_doc_vector_space(filename, terms_list):
     ''' 
     Note:
-    1. First we contruct a vector space for the document -> this is basically a frequency list of the unique terms in the document. We nned to calculate and store || D || (magnitude) for each of these documents. This can be calculated  as the square root of the sum of the squares of its components. 
+    1. First we contruct a vector space for the document -> this is basically a frequency list of the unique terms in the document. We need to calculate and store || D || (magnitude) for each of these documents. This can be calculated  as the square root of the sum of the squares of its components. 
 
-    2. In this implementation we are maintaining a json structure of filename and total terms per file. So if the file total_terms_per_file.txt is empty, we write an empty object to the file first'''
+    2. In this implementation we are maintaining a json structure of filename and total terms per file. So if the file doc_vector_space.txt is empty, we write an empty object to the file first'''
 
-    path = "total_terms_per_file.txt"
+    path = "doc_vector_space.txt"
     try:
         # first create a hashmap to store the unique term frequency as a list
         unique_term_freq = {}
@@ -129,7 +129,7 @@ for filename in os.listdir(source_folder):
             filtered_tokens_list = [word for word in tokens_list if word not in stopwords.words('english')]
             # stem the filtered token list
             stemmed_list = [stemmer.stem(word) for word in filtered_tokens_list]
-            update_total_terms_per_file(filename, stemmed_list)
+            update_doc_vector_space(filename, stemmed_list)
             postings_index_map = create_postings_map_per_file(filename, stemmed_list)
             create_postings_index(postings_index_map)
             

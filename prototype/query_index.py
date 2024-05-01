@@ -121,9 +121,9 @@ def get_docs_list_for_pq(terms, docs):
             result.append(doc)
     return result
 
-def get_total_term_frequency_per_doc():
+def get_doc_vector_space():
     try:
-        with open("total_terms_per_file.txt", 'r') as file:
+        with open("doc_vector_space.txt", 'r') as file:
             data = json.load(file)
             return data
     except:
@@ -139,7 +139,7 @@ def rank_documents(terms, docs):
         for term in terms:
             # calculate Normalized term frequency(TF) for all the terms
             # get the total no of terms in the doc
-            total_terms = total_term_freq_per_doc[doc]
+            total_terms = doc_vector_space_map[doc]
             # get the term frequency,  in this doc
             if term not in postings_index:
                 pass
@@ -157,7 +157,7 @@ def rank_documents(terms, docs):
             normalized_term_freq.append(TF)
             # now calculate the inverse doc frequency for this term
             term_freq_in_corpus = len(postings_index[term])
-            total_docs_in_corpus = len(total_term_freq_per_doc)
+            total_docs_in_corpus = len(doc_vector_space_map)
             # check if total_docs_in_corpus / term_freq_in_corpus == 1
             if total_docs_in_corpus == term_freq_in_corpus: # it means the input term is present in all the documents
                 IDF = 1 # because log 1 will be 0
@@ -184,7 +184,7 @@ def rank_documents(terms, docs):
 index_file = 'index.txt'
 postings_index = create_index_from_file(index_file)
 terms, query_type = get_query_from_user()
-total_term_freq_per_doc = get_total_term_frequency_per_doc()
+doc_vector_space_map = get_doc_vector_space()
 print("processed input terms", terms)
 if query_type == "OWQ" or query_type == "FTQ":
     docs = get_docs_list_for_owq_and_ftq(terms, docs)
