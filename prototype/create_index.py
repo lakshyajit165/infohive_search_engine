@@ -1,6 +1,7 @@
 import os
 import json
 import math
+import time
 from porter2stemmer import Porter2Stemmer
 
 from nltk.tokenize import RegexpTokenizer
@@ -46,7 +47,16 @@ def update_doc_vector_space(filename, terms_list):
                 unique_term_freq[term] = 1
         
         '''
-        We can use a vector to represent the document in bag of words model, since the ordering of terms is not important. There is an entry for each unique term in the document with the value being its term frequency. For the sake of an example, consider the document “computer study computer science”. The vector representation of this document will be of size 3 with values [2, 1, 1] corresponding to computer, study, and science respectively. We can indeed represent every document in the corpus as a k-dimensonal vector, where k is the number of unique terms in that document. Each dimension corresponds to a separate term in the document. 
+        We can use a vector to represent the document in bag of words model, 
+        since the ordering of terms is not important.
+        There is an entry for each unique term in the document with the value being 
+        its term frequency. For the sake of an example, consider the document 
+        “computer study computer science”. 
+        The vector representation of this document will be of size 3 
+        with values [2, 1, 1] corresponding to computer, study, and science respectively. 
+        We can indeed represent every document in the corpus as a k-dimensonal vector, 
+        where k is the number of unique terms in that document. 
+        Each dimension corresponds to a separate term in the document. 
         '''
         # now calculate the vector magnitude
         sum_of_squares = 0
@@ -74,7 +84,7 @@ def update_doc_vector_space(filename, terms_list):
         # Write the updated dictionary back to the file
         with open(path, 'w') as file:
             json.dump(data, file)
-        print("Term frequency updated successfully.")
+        # print("Term frequency updated successfully.")
     except Exception as e:
         print("Error updating term frequency:", e)
 
@@ -91,7 +101,7 @@ def create_index_file(postings_index, filename):
                     if i < len(postings_list) - 1:
                         file.write(';')
                 file.write('\n')
-        print(f"Data successfully written to {filename}")
+        # print(f"Data successfully written to {filename}")
     except IOError as e:
         print(f"Error writing to file: {e}")
 
@@ -115,29 +125,37 @@ def create_postings_map_per_file(doc_id, stemmed_list):
     return postings_index_map
 
 
-for filename in os.listdir(source_folder):
-    filepath = os.path.join(source_folder, filename)
-    try:
-        with open(filepath, 'r', encoding='utf-8') as file:
-            # Read text from the file and append to the list
-            text = file.read()
-            # lower case the strings
-            text = text.lower()
-            # # Get all tokens, where a token is a string of alphanumeric characters terminated by a non-alphanumeric character.
-            tokens_list = tokenizer.tokenize(text)
-            # Remove all the english stop words such as 'a', 'an', 'the' etc
-            filtered_tokens_list = [word for word in tokens_list if word not in stopwords.words('english')]
-            # stem the filtered token list
-            stemmed_list = [stemmer.stem(word) for word in filtered_tokens_list]
-            update_doc_vector_space(filename, stemmed_list)
-            postings_index_map = create_postings_map_per_file(filename, stemmed_list)
-            create_postings_index(postings_index_map)
+def process_text_files():
+    for filename in os.listdir(source_folder):
+        filepath = os.path.join(source_folder, filename)
+        try:
+            with open(filepath, 'r', encoding='utf-8') as file:
+                # Read text from the file and append to the list
+                text = file.read()
+                # lower case the strings
+                text = text.lower()
+                # # Get all tokens, where a token is a string of alphanumeric characters terminated by a non-alphanumeric character.
+                tokens_list = tokenizer.tokenize(text)
+                # Remove all the english stop words such as 'a', 'an', 'the' etc
+                filtered_tokens_list = [word for word in tokens_list if word not in stopwords.words('english')]
+                # stem the filtered token list
+                stemmed_list = [stemmer.stem(word) for word in filtered_tokens_list]
+                update_doc_vector_space(filename, stemmed_list)
+                postings_index_map = create_postings_map_per_file(filename, stemmed_list)
+                create_postings_index(postings_index_map)
             
-            
-    except FileNotFoundError:
-        print(f"File not found: {filename}")
-    except Exception as e:
-        print(f"Error reading file {filename}: {e}")
+        except FileNotFoundError:
+            print(f"File not found: {filename}")
+        except Exception as e:
+            print(f"Error reading file {filename}: {e}")
 
+start_time = time.time()
+process_text_files()
+end_time = time.time()
+print(f"process_text_files() took {end_time - start_time:.2f} seconds.")
+
+start_time = time.time()
 create_index_file(postings_index, index_file)
+end_time = time.time()
+print(f"create_index_file() took {end_time - start_time:.2f} seconds.")
 # print(postings_index)

@@ -1,5 +1,6 @@
 from porter2stemmer import Porter2Stemmer
 import json
+import os
 import math
 from nltk.tokenize import RegexpTokenizer
 from nltk.corpus import stopwords
@@ -180,6 +181,15 @@ def rank_documents(terms, docs):
     sorted_documents = [{"document": doc, "score": score} for doc, score in sorted(document_scores.items(), key=lambda x: x[1], reverse=True)]
     return sorted_documents
 
+def get_text_snippets(ranked_docs):
+    snippets = {}
+    source_dir = "source_files"
+    for doc_id in ranked_docs:
+        with open(os.path.join(source_dir, doc_id), 'r') as file:
+            text = file.read()
+            snippets[doc_id] = text[0:250]
+
+    return snippets
 
 index_file = 'index.txt'
 postings_index = create_index_from_file(index_file)
@@ -193,7 +203,20 @@ elif query_type == "PQ":
 else:
     print("unknown query type")
 
-''' now we have the "docs" list i.e the list of documents in which our input terms appear. We can run the "rank_documents" method and 
+''' now we have the "docs" list i.e the list of documents in which our input terms appear. We can run the "rank_documents" method and another method "get_snippets" in
+parallel which will fetch the relevant snippets for each document
 '''
 # now that we have the doc list, we need to rank the docs based on TF-IDF
-print(rank_documents(terms, docs))
+ranked_docs = rank_documents(terms, docs)
+text_snippets_per_doc = get_text_snippets(docs)
+
+for ranked_doc in ranked_docs:
+    ranked_doc['snippet'] = text_snippets_per_doc[ranked_doc['document']]
+    print(ranked_doc)
+    print()
+
+
+
+
+
+

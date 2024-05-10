@@ -7,6 +7,8 @@ name = "pypi"
 nltk = "*"
 porter2stemmer = "*"
 bs4 = "*"
+lxml = "*"
+requests = "*"
 
 [dev-packages]
 
