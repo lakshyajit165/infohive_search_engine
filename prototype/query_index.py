@@ -4,6 +4,7 @@ import os
 import math
 from nltk.tokenize import RegexpTokenizer
 from nltk.corpus import stopwords
+import time
 
 # documents list for user input
 docs=set()
@@ -169,16 +170,20 @@ def rank_documents(terms, docs):
         rank_meta_data["TF"] = normalized_term_freq
         rank_meta_data["IDF"] = inverse_doc_freq
         doc_rank_map[doc] = rank_meta_data
-    # print("rank map: ", doc_rank_map)
+    
     for doc, tf_idf in doc_rank_map.items():
         score = 0
         for i in range(len(tf_idf['TF'])):
             score += tf_idf['TF'][i] * tf_idf['IDF'][i]
         document_scores[doc] = score
 
-    # print("scores: ", document_scores)
+    max_score = max(document_scores.values())
     # Sort documents based on combined scores in descending order
-    sorted_documents = [{"document": doc, "score": score} for doc, score in sorted(document_scores.items(), key=lambda x: x[1], reverse=True)]
+    sorted_documents = [
+        {"document": doc, "score": score} 
+        for doc, score in sorted(document_scores.items(), key=lambda x: x[1], reverse=True)
+        if score >= 0.6 * max_score
+    ]
     return sorted_documents
 
 def get_text_snippets(ranked_docs):
@@ -191,6 +196,7 @@ def get_text_snippets(ranked_docs):
 
     return snippets
 
+start_time = time.time()
 index_file = 'index.txt'
 postings_index = create_index_from_file(index_file)
 terms, query_type = get_query_from_user()
@@ -214,6 +220,9 @@ for ranked_doc in ranked_docs:
     ranked_doc['snippet'] = text_snippets_per_doc[ranked_doc['document']]
     print(ranked_doc)
     print()
+
+end_time = time.time()
+print(f"Returned {len(ranked_docs)} results in {end_time - start_time:.6f} seconds.")
 
 
 
