@@ -132,6 +132,10 @@ def get_doc_vector_space():
         print("Error fetching total terms per file")
 
 def rank_documents(terms, docs):
+    # return empty list, if docs length is 0
+    if len(docs) == 0:
+        return []
+    
     doc_rank_map = {}
     document_scores = {}
     for doc in docs:
