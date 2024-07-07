@@ -5,6 +5,7 @@ import math
 from nltk.tokenize import RegexpTokenizer
 from nltk.corpus import stopwords
 import time
+import concurrent.futures
 
 # documents list for user input
 docs=set()
@@ -202,9 +203,21 @@ def get_text_snippets(ranked_docs):
 
 start_time = time.time()
 index_file = 'index.txt'
-postings_index = create_index_from_file(index_file)
+
+# create the index and vector_space_map in memory parallely
+# because they are separate files
+with concurrent.futures.ThreadPoolExecutor() as executor:
+    # Submit the functions to the executor
+    future_index = executor.submit(create_index_from_file, index_file)
+    future_doc_vector = executor.submit(get_doc_vector_space)
+
+    # Wait for all futures to complete and get the results
+    postings_index = future_index.result()
+    doc_vector_space_map = future_doc_vector.result()
+
+# get input from user
 terms, query_type = get_query_from_user()
-doc_vector_space_map = get_doc_vector_space()
+
 print("processed input terms", terms)
 if query_type == "OWQ" or query_type == "FTQ":
     docs = get_docs_list_for_owq_and_ftq(terms, docs)
@@ -213,12 +226,20 @@ elif query_type == "PQ":
 else:
     print("unknown query type")
 
-''' now we have the "docs" list i.e the list of documents in which our input terms appear. We can run the "rank_documents" method and another method "get_snippets" in
+''' now we have the "docs" list i.e the list of documents in which our input terms appear. 
+We can run the "rank_documents" method and another method "get_text_snippets" in
 parallel which will fetch the relevant snippets for each document
 '''
 # now that we have the doc list, we need to rank the docs based on TF-IDF
-ranked_docs = rank_documents(terms, docs)
-text_snippets_per_doc = get_text_snippets(docs)
+with concurrent.futures.ThreadPoolExecutor() as executor:
+    # Submit the functions to the executor
+    future_ranked_docs = executor.submit(rank_documents, terms, docs)
+    future_text_snippets_per_doc = executor.submit(get_text_snippets, docs)
+
+    # Wait for all futures to complete and get the results
+    ranked_docs = future_ranked_docs.result()
+    text_snippets_per_doc = future_text_snippets_per_doc.result()
+
 
 for ranked_doc in ranked_docs:
     ranked_doc['snippet'] = text_snippets_per_doc[ranked_doc['document']]
