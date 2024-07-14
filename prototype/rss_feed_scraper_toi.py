@@ -41,21 +41,16 @@ def save_content(source_folder, title, content):
 
 def main():
     rss_urls = [
-        'https://timesofindia.indiatimes.com/rssfeedstopstories.cms',
-        'https://timesofindia.indiatimes.com/rssfeedmostrecent.cms',
-        'https://timesofindia.indiatimes.com/rssfeeds/-2128936835.cms',
-        'https://timesofindia.indiatimes.com/rssfeeds/296589292.cms',
-        'https://timesofindia.indiatimes.com/rssfeeds/7098551.cms',
-        'https://timesofindia.indiatimes.com/rssfeeds/1898055.cms',
-        'https://timesofindia.indiatimes.com/rssfeeds_us/72258322.cms',
-        'https://timesofindia.indiatimes.com/rssfeeds/54829575.cms',
-        'https://timesofindia.indiatimes.com/rssfeeds/4719148.cms',
-        'https://timesofindia.indiatimes.com/rssfeeds/-2128672765.cms',
-        'https://timesofindia.indiatimes.com/rssfeeds/2647163.cms',
-        'https://timesofindia.indiatimes.com/rssfeeds/66949542.cms',
-        'https://timesofindia.indiatimes.com/rssfeeds/913168846.cms',
-        'https://timesofindia.indiatimes.com/rssfeeds/1081479906.cms',
-        'https://timesofindia.indiatimes.com/rssfeeds/2886704.cms'
+        'https://timesofindia.indiatimes.com/rssfeedstopstories.cms', # breaking
+        'https://timesofindia.indiatimes.com/rssfeedmostrecent.cms', # breaking
+        'https://timesofindia.indiatimes.com/rssfeeds/-2128936835.cms', # india
+        'https://timesofindia.indiatimes.com/rssfeeds/296589292.cms', # world
+        'https://timesofindia.indiatimes.com/rssfeeds/1898055.cms', # business
+        'https://timesofindia.indiatimes.com/rssfeeds/54829575.cms', # cricket
+        'https://timesofindia.indiatimes.com/rssfeeds/4719148.cms', # sports
+        'https://timesofindia.indiatimes.com/rssfeeds/-2128672765.cms', # science
+        'https://timesofindia.indiatimes.com/rssfeeds/2647163.cms', # environment
+        'https://timesofindia.indiatimes.com/rssfeeds/913168846.cms', # education
     ]
     for rss_url in rss_urls:
         article_urls = fetch_rss_feed(rss_url)

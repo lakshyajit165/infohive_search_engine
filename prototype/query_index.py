@@ -51,7 +51,9 @@ def get_query_from_user():
     tokenizer = RegexpTokenizer(r'\w+')
     stemmer = Porter2Stemmer()  
     '''
-    The transformations performed on words of the collection, such as stemming, lowercasing, removing stopwords, and eliminating non-alphanumeric characters will be performed on the query as well. So, querying for computer or Computer is basically the same.
+    The transformations performed on words of the collection, such as stemming, lowercasing, removing stopwords, 
+    and eliminating non-alphanumeric characters will be performed on the query as well. 
+    So, querying for computer or Computer is basically the same.
     '''
     # get input from the user
     user_input = input("Search: ")
