@@ -193,14 +193,33 @@ def rank_documents(terms, docs):
     ]
     return sorted_documents
 
-def get_text_snippets(ranked_docs):
+def get_doc_metadata(ranked_docs):
     snippets = {}
     source_dir = "source_files"
+    
     for doc_id in ranked_docs:
-        with open(os.path.join(source_dir, doc_id), 'r') as file:
-            text = file.read()
-            snippets[doc_id] = text[0:250]
-
+        try:
+            with open(os.path.join(source_dir, doc_id), 'r', encoding='utf-8') as file:
+                data = json.load(file)
+                url = data.get('url', '')
+                title = data.get('title', '')
+                content = data.get('content', '')[:250]
+                
+                snippets[doc_id] = {
+                    "doc_id": doc_id,
+                    "metadata": {
+                        "title": title,
+                        "url": url,
+                        "content": content
+                    }
+                }
+        except FileNotFoundError:
+            print(f"File not found: {doc_id}")
+        except json.JSONDecodeError:
+            print(f"Error decoding JSON in file: {doc_id}")
+        except Exception as e:
+            print(f"Error reading file {doc_id}: {e}")
+    
     return snippets
 
 start_time = time.time()
@@ -229,22 +248,22 @@ else:
     print("unknown query type")
 
 ''' now we have the "docs" list i.e the list of documents in which our input terms appear. 
-We can run the "rank_documents" method and another method "get_text_snippets" in
+We can run the "rank_documents" method and another method "get_doc_metadata" in
 parallel which will fetch the relevant snippets for each document
 '''
 # now that we have the doc list, we need to rank the docs based on TF-IDF
 with concurrent.futures.ThreadPoolExecutor() as executor:
     # Submit the functions to the executor
     future_ranked_docs = executor.submit(rank_documents, terms, docs)
-    future_text_snippets_per_doc = executor.submit(get_text_snippets, docs)
+    future_metadata_per_doc = executor.submit(get_doc_metadata, docs)
 
     # Wait for all futures to complete and get the results
     ranked_docs = future_ranked_docs.result()
-    text_snippets_per_doc = future_text_snippets_per_doc.result()
+    metadata_per_doc = future_metadata_per_doc.result()
 
 
 for ranked_doc in ranked_docs:
-    ranked_doc['snippet'] = text_snippets_per_doc[ranked_doc['document']]
+    ranked_doc['metadata'] = metadata_per_doc[ranked_doc['document']]
     print(ranked_doc)
     print()
 

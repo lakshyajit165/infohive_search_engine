@@ -1,14 +1,17 @@
 import requests
 from bs4 import BeautifulSoup
 import os
+import json
+from urllib.parse import urlparse
 
 
 def fetch_rss_feed(url):
     """Fetches and parses RSS feed, returning list of article URLs."""
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'xml')
-    links = soup.find_all('link')[1:]  # Skip the first 'link' as it's the link to the RSS itself
-    return [link.text for link in links]
+    items = soup.find_all('item')
+    links = [item.find('link').text for item in items if item.find('link')]
+    return links
 
 def scrape_article(url):
     """Scrapes the title and content from a given Times of India article URL."""
@@ -26,18 +29,29 @@ def scrape_article(url):
     
     return title, content
 
-def save_content(source_folder, title, content):
-    """Saves content to a text file named after the title."""
+def save_content(source_folder, url, title, content):
+    """Saves content to a JSON file named after the title."""
     try: 
-        # null check for filename
+        # Null check for filename
         if len(title) > 0:
+            # Sanitize the title to create a safe filename
             safe_title = "".join(x for x in title if x.isalnum() or x in " -_")
-            filename = f"{safe_title}.txt"
+            filename = f"{safe_title}.json"
             filepath = os.path.join(source_folder, filename)
+            
+            # Create a dictionary for the content
+            data = {
+                "url": url,
+                "title": title,
+                "content": content
+            }
+            
+            # Write the dictionary to a JSON file
             with open(filepath, 'w', encoding='utf-8') as f:
-                f.write(content)
+                json.dump(data, f, ensure_ascii=False, indent=4)
     except Exception as e:
         print(f"Error saving file with title {title}: {e}")
+
 
 def main():
     rss_urls = [
@@ -57,7 +71,7 @@ def main():
         for url in article_urls:
             if len(url) > 0:
                 title, content = scrape_article(url)
-                save_content("source_files", title, content)
+                save_content("source_files", url, title, content)
                 if len(title) > 0: 
                     print(f"Saved '{title}' to file.")
 

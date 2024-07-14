@@ -125,32 +125,39 @@ def create_postings_map_per_file(doc_id, stemmed_list):
     return postings_index_map
 
 
-def process_text_files():
+def process_files():
     for filename in os.listdir(source_folder):
         filepath = os.path.join(source_folder, filename)
         try:
             with open(filepath, 'r', encoding='utf-8') as file:
-                # Read text from the file and append to the list
-                text = file.read()
-                # lower case the strings
-                text = text.lower()
-                # # Get all tokens, where a token is a string of alphanumeric characters terminated by a non-alphanumeric character.
-                tokens_list = tokenizer.tokenize(text)
-                # Remove all the english stop words such as 'a', 'an', 'the' etc
+                # Read JSON data from the file
+                data = json.load(file)
+                # Extract the content attribute
+                content = data.get('content', '')
+                # Convert content to lower case
+                content = content.lower()
+                # Tokenize the content
+                tokens_list = tokenizer.tokenize(content)
+                # Remove all English stop words
                 filtered_tokens_list = [word for word in tokens_list if word not in stopwords.words('english')]
-                # stem the filtered token list
+                # Stem the filtered token list
                 stemmed_list = [stemmer.stem(word) for word in filtered_tokens_list]
+                # Update document vector space
                 update_doc_vector_space(filename, stemmed_list)
+                # Create postings index
                 postings_index_map = create_postings_map_per_file(filename, stemmed_list)
                 create_postings_index(postings_index_map)
             
         except FileNotFoundError:
             print(f"File not found: {filename}")
+        except json.JSONDecodeError:
+            print(f"Error decoding JSON in file: {filename}")
         except Exception as e:
             print(f"Error reading file {filename}: {e}")
 
+
 start_time = time.time()
-process_text_files()
+process_files()
 end_time = time.time()
 print(f"process_text_files() took {end_time - start_time:.2f} seconds.")
 
