@@ -9,6 +9,10 @@ import concurrent.futures
 
 # documents list for user input
 docs=set()
+# percentage multiplier for rank docs' scores
+# eg, if results contain 10 docs with scores 1-10, the result list will
+# contain docs with ranks >= 6 only
+RANK_THRESHOLD_FOR_SEARCH = 0.6
 
 # creating the index in memory
 def create_index_from_file(filename):
@@ -151,7 +155,7 @@ def rank_documents(terms, docs):
             total_terms = doc_vector_space_map[doc]
             # get the term frequency,  in this doc
             if term not in postings_index:
-                pass
+                continue
             list_of_docs_for_term = postings_index[term]
             # print("list of docs for term", doc, term, list_of_docs_for_term)
             # term_freq_for_doc = len([element for element in list_of_docs_for_term if element[0] == doc])
@@ -189,7 +193,7 @@ def rank_documents(terms, docs):
     sorted_documents = [
         {"document": doc, "score": score} 
         for doc, score in sorted(document_scores.items(), key=lambda x: x[1], reverse=True)
-        if score >= 0.6 * max_score
+        if score >= RANK_THRESHOLD_FOR_SEARCH * max_score
     ]
     return sorted_documents
 
@@ -263,8 +267,10 @@ with concurrent.futures.ThreadPoolExecutor() as executor:
 
 
 for ranked_doc in ranked_docs:
-    ranked_doc['metadata'] = metadata_per_doc[ranked_doc['document']]
-    print(ranked_doc)
+    # ranked_doc['metadata'] = metadata_per_doc[ranked_doc['document']]
+    response = metadata_per_doc[ranked_doc['document']]['metadata']
+    response['score'] = ranked_doc['score']
+    print(response)
     print()
 
 end_time = time.time()
