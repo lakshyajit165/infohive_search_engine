@@ -16,6 +16,7 @@ RANK_THRESHOLD_FOR_SEARCH = 0.6
 
 # creating the index in memory
 def create_index_from_file(filename):
+    start_time = time.time()
     postings_index = {}
     try:
         with open(filename, 'r') as file:
@@ -26,11 +27,12 @@ def create_index_from_file(filename):
                 # Split postings list by ';'
                 for posting in postings_str.split(';'):
                     docID, positions_str = posting.split(':')
-                    # docID = int(docID) -> remove this line
                     positions = [int(pos) for pos in positions_str.split(',')]
                     postings_list.append([docID, positions])
                 postings_index[term] = postings_list
         print("Index created successfully!")
+        end_time = time.time()
+        print(f"create_index_from_file took {end_time - start_time:.6f} seconds.")
         return postings_index
     except IOError as e:
         print(f"Error reading file: {e}")
@@ -61,6 +63,7 @@ def get_query_from_user():
     '''
     # get input from the user
     user_input = input("Search: ")
+    start_time = time.time()
     # determine the query type
     query_type = determine_query_type(user_input)
     # lower case the strings
@@ -71,9 +74,12 @@ def get_query_from_user():
     filtered_tokens_list = [word for word in tokens_list if word not in stopwords.words('english')]
     # stem the filtered token list
     stemmed_list = [stemmer.stem(word) for word in filtered_tokens_list]
+    end_time = time.time()
+    print(f"get_query_from_user took {end_time - start_time:.6f} seconds.")
     return stemmed_list, query_type
 
 def get_docs_list_for_owq_and_ftq(terms, docs):
+    start_time = time.time()
     # It’s like evaluating a OWQ for every query term, and taking the union of the results
     for term in terms:
         try:
@@ -83,9 +89,12 @@ def get_docs_list_for_owq_and_ftq(terms, docs):
         except:
             #term is not in index
             pass
+    end_time = time.time()
+    print(f"get_docs_list_for_owq_and_ftq took {end_time - start_time:.6f} seconds.")
     return list(docs)
 
 def get_docs_list_for_pq(terms, docs):
+    start_time = time.time()
     for term in terms:
         try:
             termDocs=[posting[0] for posting in postings_index[term]]
@@ -128,17 +137,23 @@ def get_docs_list_for_pq(terms, docs):
         list_intersection = set.intersection(*sets)
         if len(list_intersection) != 0:
             result.append(doc)
+    end_time = time.time()
+    print(f"get_docs_list_for_pq took {end_time - start_time:.6f} seconds.")
     return result
 
 def get_doc_vector_space():
+    start_time = time.time()
     try:
         with open("doc_vector_space.txt", 'r') as file:
             data = json.load(file)
+            end_time = time.time()
+            print(f"get_doc_vector_space took {end_time - start_time:.6f} seconds.")
             return data
     except:
         print("Error fetching total terms per file")
 
 def rank_documents(terms, docs):
+    start_time = time.time()
     # return empty list, if docs length is 0
     if len(docs) == 0:
         return []
@@ -163,7 +178,7 @@ def rank_documents(terms, docs):
             for doc_and_freq in list_of_docs_for_term:
                 if doc_and_freq[0] == doc:
                     term_freq_for_doc = len(doc_and_freq[1])
-                    break;
+                    break
 
             TF = term_freq_for_doc / total_terms
             # print("Doc, term, TF and total_terms", doc, term, term_freq_for_doc, total_terms)
@@ -195,9 +210,12 @@ def rank_documents(terms, docs):
         for doc, score in sorted(document_scores.items(), key=lambda x: x[1], reverse=True)
         if score >= RANK_THRESHOLD_FOR_SEARCH * max_score
     ]
+    end_time = time.time()
+    print(f"rank_documents took {end_time - start_time:.6f} seconds.")
     return sorted_documents
 
 def get_doc_metadata(ranked_docs):
+    start_time = time.time()
     snippets = {}
     source_dir = "source_files"
     
@@ -223,12 +241,16 @@ def get_doc_metadata(ranked_docs):
             print(f"Error decoding JSON in file: {doc_id}")
         except Exception as e:
             print(f"Error reading file {doc_id}: {e}")
-    
+    end_time = time.time()
+    print(f"get_doc_metadata took {end_time - start_time:.6f} seconds.")
     return snippets
 
-start_time = time.time()
-index_file = 'index.txt'
 
+index_file = 'index.txt'
+# get input from user
+terms, query_type = get_query_from_user()
+
+start_time = time.time()
 # create the index and vector_space_map in memory parallely
 # because they are separate files
 with concurrent.futures.ThreadPoolExecutor() as executor:
@@ -239,9 +261,6 @@ with concurrent.futures.ThreadPoolExecutor() as executor:
     # Wait for all futures to complete and get the results
     postings_index = future_index.result()
     doc_vector_space_map = future_doc_vector.result()
-
-# get input from user
-terms, query_type = get_query_from_user()
 
 print("processed input terms", terms)
 if query_type == "OWQ" or query_type == "FTQ":
