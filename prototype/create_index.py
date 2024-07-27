@@ -159,7 +159,7 @@ def process_files():
 start_time = time.time()
 process_files()
 end_time = time.time()
-print(f"process_text_files() took {end_time - start_time:.2f} seconds.")
+print(f"process_files() took {end_time - start_time:.2f} seconds.")
 
 start_time = time.time()
 create_index_file(postings_index, index_file)
